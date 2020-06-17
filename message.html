@@ -203,7 +203,7 @@
       function textAreaHeightSet(props) {
         props.style.height = '10px';
         let contentHeight = props.scrollHeight - 10;
-        let xTimes = Math.floor(contentHeight / 26);
+        let xTimes = Math.floor(contentHeight / 24);
         props.style.height = `${26 * xTimes + 12}px`;
       }
 
