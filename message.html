@@ -211,10 +211,9 @@
       window.onload = () => {
         let elem = document.documentElement;
         let bottom = elem.scrollHeight - elem.clientHeight;
-        console.log(elem.scrollHeight);
-        console.log(elem.clientHeight);
-        console.log(bottom);
-        window.scroll(0, bottom);
+        setTimeout(() => {
+          window.scroll(0, bottom);
+        }, 0);
       };
     </script>
   </body>
