@@ -2,7 +2,7 @@
 
 button[type='submit'] {
   border: none;
-  background-color: #ffffff;
+  background-color: inherit;
 }
 button[type='submit']:focus {
   outline: none;
