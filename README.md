@@ -7,7 +7,8 @@ Mockup - Noah's Fashion
     - [予約内容確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/reserve_confirm.html)
       - [予約完了](https://teppei-hashimoto.github.io/noahs-fashion-mockup/reserve_complete.html)
 - お気に入り
-- メッセージ
+- メッセージ一覧
+ - [メッセージ](https://teppei-hashimoto.github.io/noahs-fashion-mockup/message.html)
 - 予約確認
   - [予約詳細](https://teppei-hashimoto.github.io/noahs-fashion-mockup/reserve_infomation.html)
   - [レビュー](https://teppei-hashimoto.github.io/noahs-fashion-mockup/review.html)
