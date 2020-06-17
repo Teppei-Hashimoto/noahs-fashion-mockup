@@ -97,18 +97,18 @@ main .wrap {
   align-self: flex-end;
 }
 
-.wrap-message-fshnst,
-.wrap-message-user {
+.wrap-your-message,
+.wrap-my-message {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-bottom: 10px;
 }
-.wrap-message-user {
+.wrap-my-message {
   margin-left: 30px;
 }
-.wrap-message-fshnst .message-fshnst,
-.wrap-message-user .message-user {
+.wrap-your-message .your-message,
+.wrap-my-message .my-message {
   padding: 5px 10px;
   box-sizing: border-box;
   border-radius: 15px;
@@ -116,21 +116,21 @@ main .wrap {
   line-height: 18px;
   letter-spacing: -1px;
 }
-.wrap-message-fshnst .message-fshnst {
+.wrap-your-message .your-message {
   margin: 0 10px;
   background-color: #ffffff;
 }
-.wrap-message-user .message-user {
+.wrap-my-message .my-message {
   margin-left: 10px;
   background-color: #83ff79;
 }
 
-.wrap-message-fshnst button[form='fshnst-profile'] {
+.wrap-your-message button[form='fshnst-profile'] {
   width: 28px;
   height: 28px;
   align-self: flex-start;
 }
-.wrap-message-fshnst .fshnst-img {
+.wrap-your-message .fshnst-img {
   display: block;
   object-fit: cover;
   width: 28px;
