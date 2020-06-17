@@ -31,7 +31,7 @@ header {
   display: block;
   height: 29px;
 }
-.wrap-header #fshnst-name {
+.wrap-header #your-name {
   display: block;
   font-size: 2rem;
   line-height: 29px;
@@ -85,11 +85,11 @@ main .wrap {
   padding: 60px 10px;
 }
 
-.message-box {
+#message-box {
   display: flex;
   flex-direction: column;
 }
-.message-box .time {
+#message-box .time {
   display: block;
   height: 10px;
   font-size: 8px;
@@ -125,12 +125,12 @@ main .wrap {
   background-color: #83ff79;
 }
 
-.wrap-your-message button[form='fshnst-profile'] {
+.wrap-your-message button[form='your-profile'] {
   width: 28px;
   height: 28px;
   align-self: flex-start;
 }
-.wrap-your-message .fshnst-img {
+.wrap-your-message .your-img {
   display: block;
   object-fit: cover;
   width: 28px;

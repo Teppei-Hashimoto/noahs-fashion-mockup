@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/message.css" />
   </head>
   <body>
+    <!-- ヘッダー -->
     <header>
       <!-- 以下に戻るページを指定 -->
       <form action="" method="post" id="back"></form>
@@ -17,25 +18,27 @@
       <div class="wrap-header">
         <!-- 戻るアイコン -->
         <button type="submit" form="back">back</button>
-        <p id="fshnst-name">nekoさん</p>
+        <p id="your-name">nekoさん</p>
       </div>
     </header>
+    <!-- ヘッダー　ここまで -->
+    <!-- メイン -->
     <main>
       <div class="wrap">
         <!-- ファッショニスタのアイコンタッチでプロフィールへ遷移 -->
         <!-- 以下のフォームは画面に表示されません。hiddenは必要であれば設定してね。 -->
-        <form action="" method="post" id="fshnst-profile"></form>
-        <input type="hidden" name="" form="fshnst-profile" value="" />
+        <form action="" method="post" id="your-profile"></form>
+        <input type="hidden" name="" form="your-profile" value="" />
 
         <!-- メッセージ内容 -->
-        <div class="message-box">
+        <div id="message-box">
           <!-- ファッショニスタのメッセージテンプレート -->
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -54,11 +57,11 @@
           <!-- ユーザーもメッセージテンプレート　ここまで -->
           <!-- テスト用メッセージ -->
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -67,11 +70,11 @@
             <p class="time">19:30</p>
           </div>
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -92,11 +95,11 @@
             </p>
           </div>
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -105,11 +108,11 @@
             <p class="time">19:30</p>
           </div>
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -118,11 +121,11 @@
             <p class="time">19:30</p>
           </div>
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -131,11 +134,11 @@
             <p class="time">19:30</p>
           </div>
           <div class="wrap-your-message">
-            <button type="submit" form="fshnst-profile">
+            <button type="submit" form="your-profile">
               <img
                 src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
                 alt="ファッショニスタ"
-                class="fshnst-img"
+                class="your-img"
               />
             </button>
             <p class="your-message">
@@ -162,7 +165,7 @@
             </p>
           </div>
           <div class="wrap-my-message">
-            <p class="time">19:30</p>
+            <p class="time">19:35</p>
             <p class="my-message">
               あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやいゆえよ
             </p>
@@ -172,6 +175,8 @@
         <!-- メッセージ内容　ここまで -->
       </div>
     </main>
+    <!-- メイン　ここまで -->
+    <!-- フッター -->
     <footer>
       <div class="wrap-footer">
         <form method="post" id="submit-text">
@@ -189,8 +194,10 @@
         </form>
       </div>
     </footer>
+    <!-- フッター　ここまで -->
+    <!-- スクリプト -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <script>
+    <script defer>
       // テキストエリアの高さを自動調整
       // font-size:16px, line-height:26px, border:1px, padding:5px の場合
       function textAreaHeightSet(props) {
@@ -199,6 +206,16 @@
         let xTimes = Math.floor(contentHeight / 26);
         props.style.height = `${26 * xTimes + 12}px`;
       }
+
+      // 画面読み込み時にページの一番下を表示
+      window.onload = () => {
+        let elem = document.documentElement;
+        let bottom = elem.scrollHeight - elem.clientHeight;
+        console.log(elem.scrollHeight);
+        console.log(elem.clientHeight);
+        console.log(bottom);
+        window.scroll(0, bottom);
+      };
     </script>
   </body>
 </html>
