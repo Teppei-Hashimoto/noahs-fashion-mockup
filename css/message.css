@@ -87,7 +87,7 @@ footer {
 #submit-text span.icon-send {
   display: block;
   font-size: 2.8rem;
-  color: #5aacff;
+  color: #f54ea2;
   margin-bottom: 5px;
 }
 
@@ -137,6 +137,7 @@ main .wrap {
   border-radius: 15px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   line-height: 18px;
+  color: #232231;
 }
 .wrap-your-message .your-message {
   margin: 0 10px;
