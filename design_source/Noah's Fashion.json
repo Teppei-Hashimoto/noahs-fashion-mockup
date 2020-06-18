@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Noah's Fashion",
-    "lastOpened": 1418773394855,
-    "created": 1588085974547
+    "lastOpened": 0,
+    "created": 1592473762394
   },
   "iconSets": [
     {
@@ -543,9 +543,13 @@
           "id": 106
         },
         {
-          "order": 0,
+          "order": 15,
           "ligatures": "location_on, place, room",
-          "id": 107
+          "id": 107,
+          "prevSize": 24,
+          "code": 59653,
+          "name": "location_on",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -878,9 +882,13 @@
           "id": 173
         },
         {
-          "order": 0,
+          "order": 23,
           "ligatures": "send",
-          "id": 174
+          "id": 174,
+          "prevSize": 24,
+          "code": 59656,
+          "name": "send",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -1723,14 +1731,22 @@
           "id": 342
         },
         {
-          "order": 0,
+          "order": 21,
           "ligatures": "keyboard_arrow_left",
-          "id": 343
+          "id": 343,
+          "prevSize": 24,
+          "code": 59654,
+          "name": "keyboard_arrow_left",
+          "tempChar": ""
         },
         {
-          "order": 0,
+          "order": 22,
           "ligatures": "keyboard_arrow_right",
-          "id": 344
+          "id": 344,
+          "prevSize": 24,
+          "code": 59655,
+          "name": "keyboard_arrow_right",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -2478,13 +2494,13 @@
           "id": 493
         },
         {
-          "order": 8,
+          "order": 18,
           "ligatures": "timer",
           "id": 494,
           "prevSize": 24,
           "code": 59648,
           "name": "timer",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -3084,12 +3100,20 @@
         {
           "order": 0,
           "ligatures": "arrow_back_ios",
-          "id": 614
+          "id": 614,
+          "prevSize": 24,
+          "code": 59654,
+          "name": "arrow_back_ios",
+          "tempChar": ""
         },
         {
           "order": 0,
           "ligatures": "arrow_forward_ios",
-          "id": 615
+          "id": 615,
+          "prevSize": 24,
+          "code": 59655,
+          "name": "arrow_forward_ios",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -3128,7 +3152,7 @@
           "prevSize": 24,
           "code": 59649,
           "name": "event_note",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -3457,7 +3481,7 @@
           "prevSize": 24,
           "code": 59650,
           "name": "person_outline",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -4505,7 +4529,7 @@
           "prevSize": 24,
           "code": 59651,
           "name": "check_circle_outline",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -21551,7 +21575,7 @@
           "prevSize": 24,
           "code": 59652,
           "name": "search",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "id": 206,
@@ -26209,7 +26233,7 @@
           "order": 3,
           "prevSize": 28,
           "code": 61578,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "sign-out",
@@ -28460,7 +28484,7 @@
           "order": 4,
           "prevSize": 28,
           "code": 62075,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "houzz",
@@ -39564,7 +39588,7 @@
           "id": 63,
           "prevSize": 32,
           "code": 59710,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "credit-card, money5",
@@ -40791,7 +40815,7 @@
           "id": 267,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "minus, subtract",
@@ -49659,7 +49683,8 @@
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
-      "classSelector": ".icon"
+      "classSelector": ".icon",
+      "name": "icomoon"
     },
     "historySize": 50,
     "showCodes": true,
