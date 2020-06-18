@@ -26,10 +26,16 @@ header {
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
+  max-width: 640px;
+  margin: 0 auto;
 }
 .wrap-header button[form='back'] {
   display: block;
   height: 29px;
+}
+.wrap-header button[form='back'] span.icon-keyboard_arrow_left {
+  font-size: 2.9rem;
+  color: #555555;
 }
 .wrap-header #your-name {
   display: block;
@@ -53,6 +59,8 @@ footer {
   width: 100%;
   padding: 5px 10px;
   box-sizing: border-box;
+  max-width: 640px;
+  margin: 0 auto;
 }
 #submit-text {
   display: flex;
@@ -76,13 +84,24 @@ footer {
 #submit-text #textarea:focus {
   outline: none;
 }
+#submit-text span.icon-send {
+  display: block;
+  font-size: 2.8rem;
+  color: #5aacff;
+  margin-bottom: 5px;
+}
 
 main {
-  background-color: #98e4fa;
+  background-color: #f5f5f5;
   padding: 0px;
 }
 main .wrap {
+  background-color: #98e4fa;
   padding: 60px 10px;
+  max-width: 640px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
 }
 
 #message-box {
@@ -104,15 +123,19 @@ main .wrap {
   flex-wrap: nowrap;
   margin-bottom: 10px;
 }
+.wrap-your-message {
+  align-self: flex-start;
+}
 .wrap-my-message {
   margin-left: 30px;
+  align-self: flex-end;
 }
 .wrap-your-message .your-message,
 .wrap-my-message .my-message {
   padding: 5px 10px;
   box-sizing: border-box;
   border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   line-height: 18px;
 }
 .wrap-your-message .your-message {
@@ -138,4 +161,40 @@ main .wrap {
 }
 
 @media screen and (min-width: 769px) {
+  header {
+    height: 80px;
+  }
+  .wrap-header button[form='back'] {
+    height: 60px;
+  }
+  .wrap-header button[form='back'] span.icon-keyboard_arrow_left {
+    font-size: 6rem;
+  }
+  .wrap-header button[form='back'] span.icon-keyboard_arrow_left:hover {
+    cursor: pointer;
+  }
+  .wrap-header #your-name {
+    font-size: 2.8rem;
+    line-height: 60px;
+  }
+
+  .wrap-footer {
+    padding: 10px 10px 20px;
+  }
+  #submit-text span.icon-send:hover {
+    cursor: pointer;
+  }
+
+  main .wrap {
+    padding: 100px 10px;
+  }
+
+  .wrap-your-message,
+  .wrap-my-message {
+    max-width: 61.8%;
+  }
+
+  .wrap-your-message .your-img:hover {
+    cursor: pointer;
+  }
 }

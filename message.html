@@ -17,7 +17,9 @@
 
       <div class="wrap-header">
         <!-- 戻るアイコン -->
-        <button type="submit" form="back">back</button>
+        <button type="submit" form="back">
+          <span class="icon-keyboard_arrow_left"></span>
+        </button>
         <p id="your-name">nekoさん</p>
       </div>
     </header>
@@ -25,14 +27,14 @@
     <!-- メイン -->
     <main>
       <div class="wrap">
-        <!-- ファッショニスタのアイコンタッチでプロフィールへ遷移 -->
+        <!-- メッセージ相手のアイコンタッチでプロフィールへ遷移 -->
         <!-- 以下のフォームは画面に表示されません。hiddenは必要であれば設定してね。 -->
         <form action="" method="post" id="your-profile"></form>
         <input type="hidden" name="" form="your-profile" value="" />
 
         <!-- メッセージ内容 -->
         <div id="message-box">
-          <!-- ファッショニスタのメッセージテンプレート -->
+          <!-- 相手のメッセージテンプレート -->
           <div class="wrap-your-message">
             <button type="submit" form="your-profile">
               <img
@@ -46,15 +48,15 @@
             </p>
             <p class="time">19:30</p>
           </div>
-          <!-- ファッショニスタのメッセージテンプレート　ここまで -->
-          <!-- ユーザーのメッセージテンプレート -->
+          <!-- 相手のメッセージテンプレート　ここまで -->
+          <!-- 自分のメッセージテンプレート -->
           <div class="wrap-my-message">
             <p class="time">19:30</p>
             <p class="my-message">
               あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ
             </p>
           </div>
-          <!-- ユーザーもメッセージテンプレート　ここまで -->
+          <!-- 自分のメッセージテンプレート　ここまで -->
           <!-- テスト用メッセージ -->
           <div class="wrap-your-message">
             <button type="submit" form="your-profile">
@@ -149,7 +151,7 @@
           <div class="wrap-my-message">
             <p class="time">19:30</p>
             <p class="my-message">
-              あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ
+              あいうえお
             </p>
           </div>
           <div class="wrap-my-message">
@@ -161,7 +163,7 @@
           <div class="wrap-my-message">
             <p class="time">19:30</p>
             <p class="my-message">
-              あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ
+              あいうえおかきくけこ
             </p>
           </div>
           <div class="wrap-my-message">
@@ -190,13 +192,14 @@
             oninput="textAreaHeightSet(this)"
             onchange="textAreaHeightSet(this)"
           ></textarea>
-          <button type="submit" form="submit-text">送信</button>
+          <button type="submit" form="submit-text">
+            <span class="icon-send"></span>
+          </button>
         </form>
       </div>
     </footer>
     <!-- フッター　ここまで -->
     <!-- スクリプト -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script defer>
       // テキストエリアの高さを自動調整
       // font-size:16px, line-height:26px, border:1px, padding:5px の場合
