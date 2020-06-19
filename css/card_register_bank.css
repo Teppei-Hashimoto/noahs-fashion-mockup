@@ -131,6 +131,7 @@ main .danger {
   #bank-info label input[type='text'] {
     font-size: 1.8rem;
     width: 250px;
+    height: 32px;
   }
 
   #bank-info input[type='submit'] {

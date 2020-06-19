@@ -13,10 +13,10 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体",
-    "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN",
-    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
-    "MS PGothic", sans-serif;
+  font-family: Lato, 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体',
+    'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
 }
 
 main {
@@ -67,6 +67,14 @@ a img {
   border-color: #fff;
   background: transparent;
 }
+main input[type='text'] {
+  border: 1px solid #555555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  padding: 0 5px;
+  height: 40px;
+}
 /*====================================================*/
 @media screen and (min-width: 769px) {
   h1 {
@@ -77,5 +85,10 @@ a img {
   }
   h3 {
     font-size: 3rem;
+  }
+
+  main input[type='text'] {
+    font-size: 1.8rem;
+    height: 32px;
   }
 }

@@ -245,6 +245,7 @@ main {
   }
   .my-form input[type='text'] {
     font-size: 1.8rem;
+    height: 32px;
   }
   .my-form select {
     height: 23px;
