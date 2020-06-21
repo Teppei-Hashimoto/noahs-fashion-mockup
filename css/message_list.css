@@ -104,10 +104,10 @@ main {
     font-size: 1.4rem;
   }
   .message-info-sub .badge-message {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 12px;
-    line-height: 40px;
-    top: 30px;
+    line-height: 30px;
+    top: 35px;
   }
 }

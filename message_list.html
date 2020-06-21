@@ -29,7 +29,9 @@
             </li>
             <li>
               <a href="#" aria-label="メッセージ" title="メッセージ"
-                ><span aria-hidden="true" class="icon-commenting-o"></span
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
                 ><span class="menu-message">メッセージ</span></a
               >
             </li>
@@ -41,7 +43,9 @@
             </li>
             <li>
               <a href="#" aria-label="マイページ" title="マイページ"
-                ><span aria-hidden="true" class="icon-person_outline"></span
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
                 ><span class="menu-mypage">マイページ</span></a
               >
             </li>
@@ -274,6 +278,7 @@
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <!-- 各メッセージの通知表示設定 -->
     <script defer>
       // 通知の値が 0 の場合、その通知表示を削除する
       // 100以上の場合、99+ を表示する
@@ -286,6 +291,16 @@
           badge.textContent = '99+';
         }
       });
+    </script>
+    <!-- タブバーの通知表示設定 -->
+    <script defer>
+      const msgsBadge = document.getElementById('badge-messages');
+      if (Number.parseInt(msgsBadge.textContent) === 0) {
+        msgsBadge.parentNode.removeChild(msgsBadge);
+      }
+      if (Number.parseInt(msgsBadge.textContent) > 99) {
+        msgsBadge.textContent = '99+';
+      }
     </script>
   </body>
 </html>

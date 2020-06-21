@@ -53,6 +53,7 @@
 }
 #menu span[class^='icon-'] {
   font-size: 2rem;
+  position: relative; /* 通知アイコン設定　追加 */
 }
 #menu span[class^='menu-'] {
   font-size: 1.2rem;
@@ -60,6 +61,37 @@
 
 #menu li a.active-menu {
   color: #f54ea2;
+}
+
+/* 通知アイコン設定　追加 */
+#menu #badge-messages {
+  font-family: Lato, 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体',
+    'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: #e7312d;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  top: -5px;
+  right: -15px;
+}
+#menu #badge-mypage {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: #13f700;
+  border-radius: 50%;
+  top: -2px;
+  right: -5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -90,5 +122,12 @@
 
   main {
     margin-top: 80px;
+  }
+
+  /* 通知アイコン設定　追加 */
+  #menu #badge-messages {
+    top: -10px;
+    border: 2px solid #ffffff;
+    line-height: 21px;
   }
 }
