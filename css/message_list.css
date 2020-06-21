@@ -64,7 +64,7 @@ main {
   height: 25px;
   width: 25px;
   background-color: #f54ea2;
-  border-radius: 15px;
+  border-radius: 50%;
   font-size: 10px;
   color: #ffffff;
   text-align: center;
@@ -76,4 +76,38 @@ main {
 }
 
 @media screen and (min-width: 769px) {
+  main .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .message-content label {
+    height: 100px;
+  }
+
+  .message-content .img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .message-info-main {
+    width: 80%;
+  }
+  .message-info-main .name {
+    font-size: 1.8rem;
+  }
+  .message-info-main .last-message {
+    font-size: 1.6rem;
+  }
+
+  .message-info-sub .time {
+    font-size: 1.4rem;
+  }
+  .message-info-sub .badge-message {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    top: 30px;
+  }
 }

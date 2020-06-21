@@ -190,7 +190,7 @@
                 </div>
                 <div class="message-info-sub">
                   <p class="time">6月6日</p>
-                  <div class="badge-message">1</div>
+                  <div class="badge-message">98</div>
                 </div>
                 <input type="submit" style="display: none;" />
               </label>
@@ -214,7 +214,7 @@
                 </div>
                 <div class="message-info-sub">
                   <p class="time">6月6日</p>
-                  <div class="badge-message">0</div>
+                  <div class="badge-message">99</div>
                 </div>
                 <input type="submit" style="display: none;" />
               </label>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="message-info-sub">
                   <p class="time">6月6日</p>
-                  <div class="badge-message">1</div>
+                  <div class="badge-message">100</div>
                 </div>
                 <input type="submit" style="display: none;" />
               </label>
@@ -262,7 +262,7 @@
                 </div>
                 <div class="message-info-sub">
                   <p class="time">6月6日</p>
-                  <div class="badge-message">0</div>
+                  <div class="badge-message">101</div>
                 </div>
                 <input type="submit" style="display: none;" />
               </label>
@@ -276,12 +276,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script defer>
       // 通知の値が 0 の場合、その通知表示を削除する
+      // 100以上の場合、99+ を表示する
       const msgBadges = document.querySelectorAll('.badge-message');
       msgBadges.forEach((badge) => {
-        console.dir(badge);
         if (Number.parseInt(badge.textContent) === 0) {
-          console.log('zero!');
           badge.parentNode.removeChild(badge);
+        }
+        if (Number.parseInt(badge.textContent) > 99) {
+          badge.textContent = '99+';
         }
       });
     </script>
