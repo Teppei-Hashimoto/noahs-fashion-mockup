@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?2594b7');
-  src: url('fonts/icomoon.eot?2594b7#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2594b7') format('truetype'),
-    url('fonts/icomoon.woff?2594b7') format('woff'),
-    url('fonts/icomoon.svg?2594b7#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?a4xtk2');
+  src:  url('fonts/icomoon.eot?a4xtk2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a4xtk2') format('truetype'),
+    url('fonts/icomoon.woff?a4xtk2') format('woff'),
+    url('fonts/icomoon.svg?a4xtk2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -27,41 +26,56 @@
 }
 
 .icon-location_on:before {
-  content: '\e905';
+  content: "\e905";
+}
+.icon-clear:before {
+  content: "\e909";
+}
+.icon-remove:before {
+  content: "\e90a";
 }
 .icon-send:before {
-  content: '\e908';
+  content: "\e908";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e90b";
 }
 .icon-keyboard_arrow_left:before {
-  content: '\e906';
+  content: "\e906";
 }
 .icon-keyboard_arrow_right:before {
-  content: '\e907';
+  content: "\e907";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e90c";
+}
+.icon-keyboard_backspace:before {
+  content: "\e90d";
 }
 .icon-timer:before {
-  content: '\e900';
+  content: "\e900";
 }
 .icon-event_note:before {
-  content: '\e901';
+  content: "\e901";
 }
 .icon-person_outline:before {
-  content: '\e902';
+  content: "\e902";
 }
 .icon-check_circle_outline:before {
-  content: '\e903';
+  content: "\e903";
 }
 .icon-search:before {
-  content: '\e904';
+  content: "\e904";
 }
 .icon-heart-o:before {
-  content: '\f08a';
+  content: "\f08a";
 }
 .icon-commenting-o:before {
-  content: '\f27b';
+  content: "\f27b";
 }
 .icon-coin-yen:before {
-  content: '\e93e';
+  content: "\e93e";
 }
 .icon-plus:before {
-  content: '\ea0a';
+  content: "\ea0a";
 }

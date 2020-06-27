@@ -744,7 +744,11 @@
         {
           "order": 0,
           "ligatures": "add",
-          "id": 146
+          "id": 146,
+          "prevSize": 24,
+          "code": 59659,
+          "name": "add",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -777,9 +781,13 @@
           "id": 152
         },
         {
-          "order": 0,
+          "order": 24,
           "ligatures": "clear, close",
-          "id": 153
+          "id": 153,
+          "prevSize": 24,
+          "code": 59657,
+          "name": "clear",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -842,9 +850,13 @@
           "id": 165
         },
         {
-          "order": 0,
+          "order": 25,
           "ligatures": "remove",
-          "id": 166
+          "id": 166,
+          "prevSize": 24,
+          "code": 59658,
+          "name": "remove",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -888,7 +900,7 @@
           "prevSize": 24,
           "code": 59656,
           "name": "send",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -1726,9 +1738,13 @@
           "id": 341
         },
         {
-          "order": 0,
+          "order": 27,
           "ligatures": "keyboard_arrow_down",
-          "id": 342
+          "id": 342,
+          "prevSize": 24,
+          "code": 59659,
+          "name": "keyboard_arrow_down",
+          "tempChar": ""
         },
         {
           "order": 21,
@@ -1737,7 +1753,7 @@
           "prevSize": 24,
           "code": 59654,
           "name": "keyboard_arrow_left",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 22,
@@ -1746,17 +1762,25 @@
           "prevSize": 24,
           "code": 59655,
           "name": "keyboard_arrow_right",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
-          "order": 0,
+          "order": 28,
           "ligatures": "keyboard_arrow_up",
-          "id": 345
+          "id": 345,
+          "prevSize": 24,
+          "code": 59660,
+          "name": "keyboard_arrow_up",
+          "tempChar": ""
         },
         {
-          "order": 0,
+          "order": 29,
           "ligatures": "keyboard_backspace",
-          "id": 346
+          "id": 346,
+          "prevSize": 24,
+          "code": 59661,
+          "name": "keyboard_backspace",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -2500,7 +2524,7 @@
           "prevSize": 24,
           "code": 59648,
           "name": "timer",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -3152,7 +3176,7 @@
           "prevSize": 24,
           "code": 59649,
           "name": "event_note",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -3481,7 +3505,7 @@
           "prevSize": 24,
           "code": 59650,
           "name": "person_outline",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -4529,7 +4553,7 @@
           "prevSize": 24,
           "code": 59651,
           "name": "check_circle_outline",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -21575,7 +21599,7 @@
           "prevSize": 24,
           "code": 59652,
           "name": "search",
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "id": 206,
@@ -26233,7 +26257,7 @@
           "order": 3,
           "prevSize": 28,
           "code": 61578,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "sign-out",
@@ -28484,7 +28508,7 @@
           "order": 4,
           "prevSize": 28,
           "code": 62075,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "houzz",
@@ -39588,7 +39612,7 @@
           "id": 63,
           "prevSize": 32,
           "code": 59710,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "credit-card, money5",
@@ -40815,7 +40839,7 @@
           "id": 267,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "minus, subtract",
