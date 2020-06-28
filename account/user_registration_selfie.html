@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>顔写真登録</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/user_registration_selfie.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+    <main>
+      <!-- ローディング表示 -->
+      <div class="loader-wrap hide">
+        <div class="loader">Loading...</div>
+      </div>
+
+      <div class="wrap">
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">顔写真登録</h3>
+        <!-- エラーメッセージの表示位置 -->
+        <p id="error_message"></p>
+        <p>
+          顔写真ははっきり顔がわかる写真を登録しましょう。<br />
+          顔写真はスケジュール購入したファッショニスタにのみ公開されます。
+        </p>
+        <form method="post">
+          <label for="selfie_image1" class="add-img">
+            <img
+              src="../images/blank_person.jpg"
+              alt="写真を追加する"
+              id="selfie_1"
+              class="selfie"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="selfie_image1"
+              style="display: none;"
+              accept="image/*"
+            />
+          </label>
+
+          <p>
+            アップロードできるファイルは128MB以下の(jpeg)または(png)画像のみです。
+          </p>
+
+          <input
+            type="hidden"
+            name="user_selfie1_url"
+            value=""
+            id="selfie1_url"
+          />
+
+          <input type="hidden" name="user_token" value="" />
+          <div class="buttons">
+            <input
+              type="button"
+              value="戻る"
+              id="back"
+              onClick="history.back()"
+            />
+            <input type="submit" value="次へ" id="next" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      $('#selfie_image1').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfie', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#selfie_1').attr('src', response.src);
+            $('#selfie1_url').attr('value', response.filename);
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+    </script>
+  </body>
+</html>
