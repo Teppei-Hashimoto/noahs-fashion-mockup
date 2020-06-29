@@ -51,7 +51,7 @@ main p {
   color: #555555;
   line-height: 17px;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 40px;
 }
 
 main .wrap {
@@ -61,8 +61,8 @@ main .wrap {
 .add-img {
   display: block;
   position: relative;
-  width: 130px;
-  height: calc(130px * 4 / 3);
+  width: 35vw;
+  height: calc(35vw * 5 / 4);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -95,7 +95,6 @@ main .wrap {
 /* -アイコン */
 .add-img span.icon-remove {
   font-weight: bold;
-  z-index: 20;
 }
 
 .buttons {
@@ -139,8 +138,8 @@ main .wrap {
   }
 
   .add-img {
-    width: 250px;
-    height: calc(250px * 4 / 3);
+    width: 280px;
+    height: calc(280px * 5 / 4);
   }
   .add-img:hover {
     cursor: pointer;
