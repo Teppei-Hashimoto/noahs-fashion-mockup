@@ -16,12 +16,13 @@
         <h1 id="logo">Noah's Fashion</h1>
       </div>
     </header>
-    <main>
-      <!-- ローディング表示 -->
-      <div class="loader-wrap hide">
-        <div class="loader">Loading...</div>
-      </div>
 
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
       <!-- 何工程目かを表示 -->
       <!-- 顔写真登録　3工程目 -->
       <div class="wrap">
@@ -36,12 +37,15 @@
         </div>
 
         <h3 class="subtitle">顔写真登録</h3>
-        <!-- エラーメッセージの表示位置 -->
-        <p id="error_message"></p>
-        <p>
+        <p class="explanation">
           顔写真ははっきり顔がわかる写真を登録しましょう。<br />
           顔写真はスケジュール購入したファッショニスタにのみ公開されます。
         </p>
+
+        <!-- エラーメッセージの表示 -->
+        <p class="err-msg"></p>
+        <p id="error_message" class="err-msg"></p>
+
         <form method="post">
           <label for="selfie_image1" class="add-img">
             <img
@@ -61,7 +65,7 @@
             />
           </label>
 
-          <p>
+          <p class="explanation">
             アップロードできるファイルは128MB以下の(jpeg)または(png)画像のみです。
           </p>
 

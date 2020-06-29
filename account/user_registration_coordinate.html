@@ -16,14 +16,15 @@
         <h1 id="logo">Noah's Fashion</h1>
       </div>
     </header>
-    <main>
-      <!-- ローディング表示 -->
-      <div class="loader-wrap hide">
-        <div class="loader">Loading...</div>
-      </div>
 
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
       <!-- 何工程目かを表示 -->
-      <!-- 顔写真登録　3工程目 -->
+      <!-- 全身写真登録　4工程目 -->
       <div class="wrap">
         <div class="procs">
           <span class="proc"></span>
@@ -36,16 +37,33 @@
         </div>
 
         <h3 class="subtitle">全身写真登録</h3>
-        <p>
+        <p class="explanation">
           日頃のコーデがわかる写真を登録しましょう。<br />
           全身写真はスケジュール購入したファッショニスタにのみ公開されます。
         </p>
+
+        <!-- エラーメッセージ1 -->
+        <p class="err-msg"></p>
+        <p id="error1_message" class="err-msg"></p>
+        <!-- エラーメッセージ2 -->
+        <p class="err-msg"></p>
+        <p id="error2_message" class="err-msg"></p>
+        <!-- エラーメッセージ3 -->
+        <p class="err-msg"></p>
+        <p id="error3_message" class="err-msg"></p>
+        <!-- エラーメッセージ4 -->
+        <p class="err-msg"></p>
+        <p id="error4_message" class="err-msg"></p>
+        <!-- エラーメッセージ5 -->
+        <p class="err-msg"></p>
+        <p id="error5_message" class="err-msg"></p>
+        <!-- エラーメッセージ6 -->
+        <p class="err-msg"></p>
+        <p id="error6_message" class="err-msg"></p>
+
         <form method="post" class="add-imgs">
+          <!-- 写真の追加1 -->
           <label for="code_image1" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div class="err-msg">
-              <font color="#F54EA2"><p id="error1_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -64,11 +82,8 @@
 
           <input type="hidden" name="user_code1_url" value="" id="code1_url" />
 
+          <!-- 写真の追加2 -->
           <label for="code_image2" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div class="err-msg">
-              <font color="#F54EA2"><p id="error2_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -87,11 +102,8 @@
 
           <input type="hidden" name="user_code2_url" value="" id="code2_url" />
 
+          <!-- 写真の追加3 -->
           <label for="code_image3" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div class="err-msg">
-              <font color="#F54EA2"><p id="error3_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -110,11 +122,8 @@
 
           <input type="hidden" name="user_code3_url" value="" id="code3_url" />
 
+          <!-- 写真の追加4 -->
           <label for="code_image4" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div>
-              <font color="#F54EA2"><p id="error4_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -133,11 +142,8 @@
 
           <input type="hidden" name="user_code4_url" value="" id="code4_url" />
 
+          <!-- 写真の追加5 -->
           <label for="code_image5" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div class="err-msg">
-              <font color="#F54EA2"><p id="error5_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -156,11 +162,8 @@
 
           <input type="hidden" name="user_code5_url" value="" id="code5_url" />
 
+          <!-- 写真の追加6 -->
           <label for="code_image6" class="add-img">
-            <div class="err-msg"><font color="#F54EA2"></font></div>
-            <div class="err-msg">
-              <font color="#F54EA2"><p id="error6_message"></p></font>
-            </div>
             <img
               src="../images/blank_off-white.jpg"
               alt=""
@@ -179,7 +182,7 @@
 
           <input type="hidden" name="user_code6_url" value="" id="code6_url" />
 
-          <p>
+          <p class="explanation">
             アップロードできるファイルは128MB以下の(jpeg)または(png)画像のみです.
           </p>
 

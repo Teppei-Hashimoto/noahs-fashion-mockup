@@ -30,13 +30,6 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* エラーメッセージのスタイル */
-.error_message {
-  color: #f54ea2;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
 /* サブタイトルのスタイル */
 .subtitle {
   font-size: 2.4rem;
@@ -46,16 +39,16 @@ main {
 }
 
 /* マイスタイル */
-main p {
+main .wrap {
+  padding: 0 20px;
+}
+
+main .explanation {
   font-size: 1.2rem;
   color: #555555;
   line-height: 17px;
   text-align: center;
   margin: 20px 0 40px;
-}
-
-main .wrap {
-  padding: 0 20px;
 }
 
 .add-img {
@@ -120,6 +113,14 @@ main .wrap {
   font-weight: bold;
 }
 
+/* エラーメッセージのスタイル */
+main .err-msg {
+  color: #e7312d;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0px;
+}
+
 @media screen and (min-width: 769px) {
   main .wrap {
     max-width: 1000px;
@@ -131,7 +132,7 @@ main .wrap {
     font-size: 2.6rem;
   }
 
-  main p {
+  main .explanation {
     font-size: 1.4rem;
     line-height: 19px;
     margin: 40px 0;
@@ -162,5 +163,10 @@ main .wrap {
   .buttons #back:hover,
   .buttons #next:hover {
     cursor: pointer;
+  }
+
+  /* エラーメッセージのスタイル */
+  main .err-msg {
+    font-size: 1.4rem;
   }
 }
