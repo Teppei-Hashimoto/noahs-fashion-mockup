@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>登録内容確認</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/user_registration_confirm.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+    <main>
+      <!-- 何工程目かを表示 -->
+      <!-- 登録内容確認　5工程目 -->
+      <div class="wrap">
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">登録内容確認</h3>
+        <div class="container-info">
+          <div class="content">
+            <p class="item">ユーザー名</p>
+            <hr class="break" />
+            <p class="value">あいうえおかきくけこ</p>
+          </div>
+          <div class="content">
+            <p class="item">性別</p>
+            <hr class="break" />
+            <p class="value">男性</p>
+          </div>
+          <div class="content">
+            <p class="item">生年月日</p>
+            <hr class="break" />
+            <p class="value">1995年 10月 10日</p>
+          </div>
+          <div class="content-selfie">
+            <p class="item">顔写真</p>
+            <img
+              src="../images/blank_person.jpg"
+              alt="写真を追加する"
+              id="selfie_1"
+              class="selfie"
+            />
+          </div>
+          <div class="content-coordinate">
+            <p class="item">全身写真</p>
+            <div class="container-imgs">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_1"
+                class="code-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_2"
+                class="code-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_3"
+                class="code-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_4"
+                class="code-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_5"
+                class="code-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_6"
+                class="code-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <form method="post">
+          <input type="hidden" name="user_token" value="" />
+          <div class="buttons">
+            <input
+              type="button"
+              value="戻る"
+              id="back"
+              onClick="history.back()"
+            />
+            <input type="submit" value="次へ" id="next" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
