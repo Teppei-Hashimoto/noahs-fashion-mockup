@@ -95,6 +95,7 @@ main .wrap {
 /* -アイコン */
 .add-img span.icon-remove {
   font-weight: bold;
+  z-index: 20;
 }
 
 .buttons {

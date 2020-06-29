@@ -22,6 +22,8 @@
         <div class="loader">Loading...</div>
       </div>
 
+      <!-- 何工程目かを表示 -->
+      <!-- 顔写真登録　3工程目 -->
       <div class="wrap">
         <div class="procs">
           <span class="proc"></span>
@@ -88,6 +90,7 @@
       $('#selfie_image1').on('change', function () {
         let file = $(this).prop('files')[0];
         let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
         fd.append('selfie', file);
         $.ajax({
           url: 'pre_user_selfile.php',
@@ -104,6 +107,7 @@
             $('.loader-wrap').addClass('hide'); //クラス付与
             $('#selfie_1').attr('src', response.src);
             $('#selfie1_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove'); // アイコンの変更
           } else {
             $('.loader-wrap').addClass('hide'); //クラス付与
             $('#error_message').text(response.error_log);
