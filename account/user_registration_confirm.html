@@ -50,7 +50,7 @@
             <p class="item">顔写真</p>
             <img
               src="../images/blank_person.jpg"
-              alt="写真を追加する"
+              alt=""
               id="selfie_1"
               class="selfie"
             />
@@ -98,7 +98,10 @@
           </div>
         </div>
 
-        <form method="post">
+        <!-- このformタグの外でhiddenを記述する場合は、
+        　　　form="confirm-user-info" 属性を記述してください。
+      　　　　例）<input type="hidden" name="" value="" form="confirm-user-info"> -->
+        <form method="post" action="" id="confirm-user-info">
           <input type="hidden" name="user_token" value="" />
           <div class="buttons">
             <input
