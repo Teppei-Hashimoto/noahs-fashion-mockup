@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>全身写真登録</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/user_registration_coordinate.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+    <main>
+      <!-- ローディング表示 -->
+      <div class="loader-wrap hide">
+        <div class="loader">Loading...</div>
+      </div>
+
+      <!-- 何工程目かを表示 -->
+      <!-- 顔写真登録　3工程目 -->
+      <div class="wrap">
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">全身写真登録</h3>
+        <p>
+          日頃のコーデがわかる写真を登録しましょう。<br />
+          全身写真はスケジュール購入したファッショニスタにのみ公開されます。
+        </p>
+        <form method="post" class="add-imgs">
+          <label for="code_image1" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div class="err-msg">
+              <font color="#F54EA2"><p id="error1_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_1"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image1"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code1_url" value="" id="code1_url" />
+
+          <label for="code_image2" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div class="err-msg">
+              <font color="#F54EA2"><p id="error2_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_2"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image2"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code2_url" value="" id="code2_url" />
+
+          <label for="code_image3" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div class="err-msg">
+              <font color="#F54EA2"><p id="error3_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_3"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image3"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code3_url" value="" id="code3_url" />
+
+          <label for="code_image4" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div>
+              <font color="#F54EA2"><p id="error4_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_4"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image4"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code4_url" value="" id="code4_url" />
+
+          <label for="code_image5" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div class="err-msg">
+              <font color="#F54EA2"><p id="error5_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_5"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image5"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code5_url" value="" id="code5_url" />
+
+          <label for="code_image6" class="add-img">
+            <div class="err-msg"><font color="#F54EA2"></font></div>
+            <div class="err-msg">
+              <font color="#F54EA2"><p id="error6_message"></p></font>
+            </div>
+            <img
+              src="../images/blank_off-white.jpg"
+              alt=""
+              id="code_6"
+              class="code-img"
+            />
+            <span class="icon-plus"></span>
+            <input
+              type="file"
+              name=""
+              value=""
+              id="code_image6"
+              style="display: none;"
+            />
+          </label>
+
+          <input type="hidden" name="user_code6_url" value="" id="code6_url" />
+
+          <p>
+            アップロードできるファイルは128MB以下の(jpeg)または(png)画像のみです.
+          </p>
+
+          <input
+            type="hidden"
+            name="user_selfie1_url"
+            value=""
+            id="selfie1_url"
+          />
+
+          <input type="hidden" name="user_token" value="" />
+          <div class="buttons">
+            <input
+              type="button"
+              value="戻る"
+              id="back"
+              onClick="history.back()"
+            />
+            <input type="submit" value="次へ" id="next" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      $('#code_image1').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_1').attr('src', response.src);
+            $('#code1_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error1_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image2').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_2').attr('src', response.src);
+            $('#code2_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error2_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image3').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_3').attr('src', response.src);
+            $('#code3_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error3_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image4').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_4').attr('src', response.src);
+            $('#code4_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error4_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image5').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_5').attr('src', response.src);
+            $('#code5_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error5_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image6').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_6').attr('src', response.src);
+            $('#code6_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error6_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+    </script>
+  </body>
+</html>
