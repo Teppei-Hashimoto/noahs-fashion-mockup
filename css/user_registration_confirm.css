@@ -159,9 +159,9 @@ main .wrap {
 
   .selfie,
   .code-img {
-    width: 280px;
-    height: calc(280px * 5 / 4);
-    margin: 0px 20px 40px;
+    width: 200px;
+    height: calc(200px * 5 / 4);
+    margin: 0px 40px 40px;
   }
   .selfie:hover,
   .code-img:hover {
