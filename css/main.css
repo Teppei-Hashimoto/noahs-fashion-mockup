@@ -75,6 +75,27 @@ main input[type='text'] {
   padding: 0 5px;
   height: 40px;
 }
+
+/* iOSでのデフォルトスタイルをリセット */
+input[type='submit'],
+input[type='button'] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type='submit']::-webkit-search-decoration,
+input[type='button']::-webkit-search-decoration {
+  display: none;
+}
+input[type='submit']:focus,
+input[type='button']:focus {
+  outline-offset: -2px;
+}
+
 /*====================================================*/
 @media screen and (min-width: 769px) {
   h1 {
