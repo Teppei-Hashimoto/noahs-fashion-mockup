@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>プロフィール情報登録</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fashionista_registration_profile2.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- 顔写真登録　3工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">プロフィール情報登録</h3>
+
+        <form method="post">
+          <p class="item-profile">プロフィール写真</p>
+          <!-- エラーメッセージの表示 -->
+          <p class="err-msg"></p>
+          <p class="explanation">
+            アップロードできるファイルは128MB以下の(jpeg)または(png)画像のみです。
+          </p>
+          <p id="error_message" class="err-msg"></p>
+          <label for="selfie_image1" class="add-img">
+            <img
+              src="../images/blank_person.jpg"
+              alt="写真を追加する"
+              id="selfie_1"
+              class="selfie" />
+            <span class="icon-plus"></span
+            ><input
+              type="file"
+              id="selfie_image1"
+              style="display: none;"
+              accept="image/*"
+          /></label>
+
+          <input
+            type="hidden"
+            name="fashionista_selfie1_url"
+            value=""
+            id="selfie1_url"
+          />
+
+          <p class="item-profile">ファッショニスタ名</p>
+          <!-- <div><font color="#F54EA2"></font></div> -->
+          <p class="err-msg"></p>
+          <p class="explanation">
+            ファッショニスタ名は8文字以下で登録してください
+          </p>
+          <input
+            type="text"
+            name="fashionista_name"
+            id="fashionista-name"
+            value=""
+            maxlength="8"
+            required
+          />
+
+          <p class="item-profile">身長</p>
+          <!-- <div><font color="#F54EA2"></font></div> -->
+          <p class="err-msg"></p>
+          <p class="explanation">
+            身長は3桁の整数で登録してください
+          </p>
+          <div class="age-wrap">
+            <input
+              type="number"
+              name="height"
+              id="age"
+              value=""
+              maxlength="3"
+              pattern="\d{3}"
+              placeholder="例）165"
+              required
+            />
+            <span class="unit">cm</span>
+          </div>
+
+          <p class="item-profile">経歴・自己紹介</p>
+          <!-- <div><font color="#F54EA2"></font></div> -->
+          <p class="err-msg"></p>
+          <p class="explanation">
+            アピールできる経歴やファッショニスタとしての自己紹介を記入してください
+          </p>
+          <textarea name="introduce" id="introduce" required></textarea>
+
+          <div class="buttons">
+            <input
+              class="back"
+              type="button"
+              value="戻る"
+              onClick="history.back()"
+            />
+            <input type="hidden" name="fashionista_token" value="" />
+            <input class="next" type="submit" name="next" value="次へ" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      $('#selfie_image1').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        // let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('selfie', file);
+        $.ajax({
+          url: 'pre_user_selfie.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            // $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            // $('.loader-wrap').addClass('hide');    //クラス付与
+            $('#selfie_1').attr('src', response.src);
+            $('#selfie1_url').attr('value', response.filename);
+            // editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            // $('.loader-wrap').addClass('hide');    //クラス付与
+            $('#error_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+    </script>
+  </body>
+</html>
