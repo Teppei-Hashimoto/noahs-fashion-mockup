@@ -123,18 +123,18 @@ main .explanation {
   margin: 0 auto 40px;
   text-align: center;
 }
-.age-wrap {
+.height-wrap {
   position: relative;
   display: flex;
   width: 100px;
   justify-content: center;
   margin: 0 auto 40px;
 }
-.age-wrap #age {
+.height-wrap #height {
   width: 100%;
   text-align: center;
 }
-.age-wrap .unit {
+.height-wrap .unit {
   font-size: 2rem;
   margin-left: 10px;
   position: absolute;
