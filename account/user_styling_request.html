@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>スタイリング要望</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/user_styling_request.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">スタイリング要望</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <p class="item">全身写真の編集</p>
+        <!-- エラーメッセージ1 -->
+        <p class="err-msg"></p>
+        <p id="error1_message" class="err-msg"></p>
+        <!-- エラーメッセージ2 -->
+        <p class="err-msg"></p>
+        <p id="error2_message" class="err-msg"></p>
+        <!-- エラーメッセージ3 -->
+        <p class="err-msg"></p>
+        <p id="error3_message" class="err-msg"></p>
+        <!-- エラーメッセージ4 -->
+        <p class="err-msg"></p>
+        <p id="error4_message" class="err-msg"></p>
+        <!-- エラーメッセージ5 -->
+        <p class="err-msg"></p>
+        <p id="error5_message" class="err-msg"></p>
+        <!-- エラーメッセージ6 -->
+        <p class="err-msg"></p>
+        <p id="error6_message" class="err-msg"></p>
+
+        <form method="post">
+          <div class="add-imgs">
+            <!-- 写真の追加1 -->
+            <label for="code_image1" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_1"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image1"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code1_url"
+              value=""
+              id="code1_url"
+            />
+
+            <!-- 写真の追加2 -->
+            <label for="code_image2" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_2"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image2"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code2_url"
+              value=""
+              id="code2_url"
+            />
+
+            <!-- 写真の追加3 -->
+            <label for="code_image3" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_3"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image3"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code3_url"
+              value=""
+              id="code3_url"
+            />
+
+            <!-- 写真の追加4 -->
+            <label for="code_image4" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_4"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image4"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code4_url"
+              value=""
+              id="code4_url"
+            />
+
+            <!-- 写真の追加5 -->
+            <label for="code_image5" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_5"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image5"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code5_url"
+              value=""
+              id="code5_url"
+            />
+
+            <!-- 写真の追加6 -->
+            <label for="code_image6" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="code_6"
+                class="code-img"
+              />
+              <span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="code_image6"
+                style="display: none;"
+              />
+            </label>
+
+            <input
+              type="hidden"
+              name="user_code6_url"
+              value=""
+              id="code6_url"
+            />
+          </div>
+
+          <div id="questionnaire">
+            <div class="wrap-question">
+              <p class="question">
+                1. ショッピングについてどのように思いますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_01"
+                    value="好き"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  好き
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_01"
+                    value="まあまあ"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  まあまあ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_01"
+                    value="嫌い"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  嫌い
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                2. 服装を決めるまでにどのぐらい時間を掛けますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_02"
+                    value="たくさん"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  たくさん
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_02"
+                    value="まあまあ"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  まあまあ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_02"
+                    value="あまり時間をかけない"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  あまり時間をかけない
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                3. 流行のファッションを追いかけていますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_03"
+                    value="常に"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  常に
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_03"
+                    value="しばしば"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  しばしば
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_03"
+                    value="全く追いかけていない"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  全く追いかけていない
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                4. どのようなファッションスタイルが好きですか？
+                当てはまるものを全て選んで下さい。
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="アウトドア"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  アウトドア
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="青文字"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  青文字
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="赤文字"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  赤文字
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="アメカジ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  アメカジ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="裏原"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  裏原
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="OL"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  OL
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="大人女子"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  大人女子
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="オラオラ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  オラオラ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="エスニック"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  エスニック
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="海外"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  海外
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="カジュアル"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  カジュアル
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ガーリッシュ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ガーリッシュ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ギャル"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ギャル
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="キレイめ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  キレイめ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="キレカジ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  キレカジ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="コスプレ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  コスプレ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ゴスロリ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ゴスロリ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="コンサバ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  コンサバ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="サロン"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  サロン
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ジェンダーレス"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ジェンダーレス
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="渋谷系"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  渋谷系
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="女子大生"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  女子大生
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="シンプル"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  シンプル
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ストリート"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ストリート
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="スニーカー"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  スニーカー
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="スポーツ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  スポーツ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="セクシー"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  セクシー
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="セレブ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  セレブ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ハイブランド"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ハイブランド
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="原宿系"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  原宿系
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="パンク"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  パンク
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ビジネス"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ビジネス
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="V系"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  V系
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="フェミニン"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  フェミニン
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="プチプラ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  プチプラ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="古着"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  古着
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ボーイッシュ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ボーイッシュ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ホスト"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ホスト
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ミリタリー"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ミリタリー
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="モノトーン"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  モノトーン
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="モード"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  モード
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="森系"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  森系
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ラグジュアリー"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ラグジュアリー
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ロック"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ロック
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="ロリータ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ロリータ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_04"
+                    value="和服"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  和服
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                5. 1ヶ月の洋服代はいくらですか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_05"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_05"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_05"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_05"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_05"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                6. 今回の御予算を選択してください。
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_06"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_06"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_06"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_06"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_06"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                7. Tシャツやポロシャツにいくらかけますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_07"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_07"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_07"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_07"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_07"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                8. シャツやセーターにいくらかけますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_08"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_08"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_08"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_08"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_08"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                9. パンツやデニムにいくらかけますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_09"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_09"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_09"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_09"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_09"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                10. アウターにいくらかけますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_10"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_10"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_10"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_10"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_10"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                11. 靴にいくらかけますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_11"
+                    value="5千円未満"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円未満
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_11"
+                    value="5千円〜1万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5千円〜1万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_11"
+                    value="1万円〜3万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  1万円〜3万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_11"
+                    value="3万円〜5万円"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  3万円〜5万円
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_11"
+                    value="5万円以上"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  5万円以上
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                12. 好きな色を選んで下さい。 当てはまるものを全て選んで下さい。
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="黒"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  黒
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="白"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  白
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="青"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  青
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="赤"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  赤
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="黄"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  黄
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="緑"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  緑
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="紺"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  紺
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="紫"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  紫
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="茶"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  茶
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="ピンク"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ピンク
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="カーキ"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  カーキ
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="グレー"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  グレー
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="金"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  金
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_12"
+                    value="銀"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  銀
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                13. 好きなテイストを選んで下さい。
+                当てはまるものを全て選んで下さい。
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_13"
+                    value="柄"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  柄
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_13"
+                    value="モノトーン"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  モノトーン
+                </label>
+                <label class="check-button">
+                  <input
+                    type="checkbox"
+                    name="question_13"
+                    value="ミックス"
+                    style="display: none;"
+                    onchange="handleChangeCheckbox()"
+                  />
+                  ミックス
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                14. どんなブランドが好きか教えてください。
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_14"
+                id="question_14"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                15. どんなコーディネートを提案して欲しいですか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_15"
+                id="question_15"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                16. どんなブランドを提案して欲しいですか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <div class="check-buttons">
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_16"
+                    value="自分が知っているブランド"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  自分が知っているブランド
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_16"
+                    value="自分が知らないブランド"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  自分が知らないブランド
+                </label>
+                <label class="check-button">
+                  <input
+                    type="radio"
+                    name="question_16"
+                    value="ミックス"
+                    style="display: none;"
+                    onchange="handleChangeRadio()"
+                  />
+                  ミックス
+                </label>
+              </div>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                17. どんな歌手やジャンルが好きですか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_17"
+                id="question_17"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                18. なぜこのスタイリストを選びましたか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_18"
+                id="question_18"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                19. スタイリストにどこでスタイリングして欲しいですか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_19"
+                id="question_19"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                20. スタイリストに伝えておきたいことはありますか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <textarea
+                name="question_20"
+                id="question_20"
+                class="answer-textarea"
+              ></textarea>
+            </div>
+          </div>
+
+          <input type="submit" value="回答する or 次へ" id="submit" />
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      $('#code_image1').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_1').attr('src', response.src);
+            $('#code1_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error1_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image2').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_2').attr('src', response.src);
+            $('#code2_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error2_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image3').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_3').attr('src', response.src);
+            $('#code3_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error3_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image4').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_4').attr('src', response.src);
+            $('#code4_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error4_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image5').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_5').attr('src', response.src);
+            $('#code5_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error5_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#code_image6').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        fd.append('selfile', file);
+        $.ajax({
+          url: 'pre_user_selfile.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loading').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#code_6').attr('src', response.src);
+            $('#code6_url').attr('value', response.filename);
+          } else {
+            $('.loading').addClass('hide'); //クラス付与
+            $('#error6_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+    </script>
+    <script>
+      // ラジオボタンのスタイル変更メソッド
+      let handleChangeRadio = () => {
+        let checkedButtons = document.querySelectorAll(
+          'input[type="radio"]:checked'
+        );
+        let notCheckedButtons = document.querySelectorAll(
+          'input[type="radio"]:not(:checked)'
+        );
+        Array.from(checkedButtons).forEach((elem) => {
+          elem.parentNode.classList.add('checked');
+        });
+        Array.from(notCheckedButtons).forEach((elem) => {
+          elem.parentNode.classList.remove('checked');
+        });
+      };
+      // チェックボックスのスタイル変更メソッド
+      let handleChangeCheckbox = () => {
+        let checkedButtons = document.querySelectorAll(
+          'input[type="checkbox"]:checked'
+        );
+        let notCheckedButtons = document.querySelectorAll(
+          'input[type="checkbox"]:not(:checked)'
+        );
+        Array.from(checkedButtons).forEach((elem) => {
+          elem.parentNode.classList.add('checked');
+        });
+        Array.from(notCheckedButtons).forEach((elem) => {
+          elem.parentNode.classList.remove('checked');
+        });
+      };
+      // 画面読み込み時の処理
+      window.onload = () => {
+        handleChangeRadio();
+        handleChangeCheckbox();
+      };
+    </script>
+  </body>
+</html>
