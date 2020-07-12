@@ -200,79 +200,85 @@
           <div id="questionnaire">
             <div class="wrap-question">
               <p class="question">
-                1. ショッピングについてどのように思いますか？
+                1. 普段、ショッピングはどのようなかたちで行いますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_01"
-                    value="好き"
+                    value="店舗"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  好き
+                  店舗
                 </label>
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_01"
-                    value="まあまあ"
+                    value="通販サイト"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  まあまあ
+                  通販サイト
                 </label>
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_01"
-                    value="嫌い"
+                    value="どちらとも"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  嫌い
+                  どちらとも
                 </label>
               </div>
             </div>
             <div class="wrap-question">
               <p class="question">
-                2. 服装を決めるまでにどのぐらい時間を掛けますか？
+                2. お出掛けの服装を決めるまでにどのくらい時間をかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_02"
-                    value="たくさん"
+                    value="10分以内"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  たくさん
+                  10分以内
                 </label>
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_02"
-                    value="まあまあ"
+                    value="10〜30分"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  まあまあ
+                  10〜30分
                 </label>
                 <label class="check-button">
                   <input
                     type="radio"
                     name="question_02"
-                    value="あまり時間をかけない"
+                    value="30分以上"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  あまり時間をかけない
+                  30分以上
                 </label>
               </div>
             </div>
@@ -282,6 +288,9 @@
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -318,10 +327,13 @@
             <div class="wrap-question">
               <p class="question">
                 4. どのようなファッションスタイルが好きですか？
-                当てはまるものを全て選んで下さい。
+                複数選択可能（最大3つ）
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -329,7 +341,7 @@
                     name="question_04"
                     value="アウトドア"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   アウトドア
                 </label>
@@ -339,7 +351,7 @@
                     name="question_04"
                     value="青文字"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   青文字
                 </label>
@@ -349,7 +361,7 @@
                     name="question_04"
                     value="赤文字"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   赤文字
                 </label>
@@ -359,7 +371,7 @@
                     name="question_04"
                     value="アメカジ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   アメカジ
                 </label>
@@ -369,7 +381,7 @@
                     name="question_04"
                     value="裏原"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   裏原
                 </label>
@@ -379,7 +391,7 @@
                     name="question_04"
                     value="OL"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   OL
                 </label>
@@ -389,7 +401,7 @@
                     name="question_04"
                     value="大人女子"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   大人女子
                 </label>
@@ -399,7 +411,7 @@
                     name="question_04"
                     value="オラオラ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   オラオラ
                 </label>
@@ -409,7 +421,7 @@
                     name="question_04"
                     value="エスニック"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   エスニック
                 </label>
@@ -419,7 +431,7 @@
                     name="question_04"
                     value="海外"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   海外
                 </label>
@@ -429,7 +441,7 @@
                     name="question_04"
                     value="カジュアル"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   カジュアル
                 </label>
@@ -439,7 +451,7 @@
                     name="question_04"
                     value="ガーリッシュ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ガーリッシュ
                 </label>
@@ -449,7 +461,7 @@
                     name="question_04"
                     value="ギャル"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ギャル
                 </label>
@@ -459,7 +471,7 @@
                     name="question_04"
                     value="キレイめ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   キレイめ
                 </label>
@@ -469,7 +481,7 @@
                     name="question_04"
                     value="キレカジ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   キレカジ
                 </label>
@@ -479,7 +491,7 @@
                     name="question_04"
                     value="コスプレ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   コスプレ
                 </label>
@@ -489,7 +501,7 @@
                     name="question_04"
                     value="ゴスロリ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ゴスロリ
                 </label>
@@ -499,7 +511,7 @@
                     name="question_04"
                     value="コンサバ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   コンサバ
                 </label>
@@ -509,7 +521,7 @@
                     name="question_04"
                     value="サロン"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   サロン
                 </label>
@@ -519,7 +531,7 @@
                     name="question_04"
                     value="ジェンダーレス"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ジェンダーレス
                 </label>
@@ -529,7 +541,7 @@
                     name="question_04"
                     value="渋谷系"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   渋谷系
                 </label>
@@ -539,7 +551,7 @@
                     name="question_04"
                     value="女子大生"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   女子大生
                 </label>
@@ -549,7 +561,7 @@
                     name="question_04"
                     value="シンプル"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   シンプル
                 </label>
@@ -559,7 +571,7 @@
                     name="question_04"
                     value="ストリート"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ストリート
                 </label>
@@ -569,7 +581,7 @@
                     name="question_04"
                     value="スニーカー"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   スニーカー
                 </label>
@@ -579,7 +591,7 @@
                     name="question_04"
                     value="スポーツ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   スポーツ
                 </label>
@@ -589,7 +601,7 @@
                     name="question_04"
                     value="セクシー"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   セクシー
                 </label>
@@ -599,7 +611,7 @@
                     name="question_04"
                     value="セレブ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   セレブ
                 </label>
@@ -609,7 +621,7 @@
                     name="question_04"
                     value="ハイブランド"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ハイブランド
                 </label>
@@ -619,7 +631,7 @@
                     name="question_04"
                     value="原宿系"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   原宿系
                 </label>
@@ -629,7 +641,7 @@
                     name="question_04"
                     value="パンク"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   パンク
                 </label>
@@ -639,7 +651,7 @@
                     name="question_04"
                     value="ビジネス"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ビジネス
                 </label>
@@ -649,7 +661,7 @@
                     name="question_04"
                     value="V系"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   V系
                 </label>
@@ -659,7 +671,7 @@
                     name="question_04"
                     value="フェミニン"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   フェミニン
                 </label>
@@ -669,7 +681,7 @@
                     name="question_04"
                     value="プチプラ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   プチプラ
                 </label>
@@ -679,7 +691,7 @@
                     name="question_04"
                     value="古着"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   古着
                 </label>
@@ -689,7 +701,7 @@
                     name="question_04"
                     value="ボーイッシュ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ボーイッシュ
                 </label>
@@ -699,7 +711,7 @@
                     name="question_04"
                     value="ホスト"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ホスト
                 </label>
@@ -709,7 +721,7 @@
                     name="question_04"
                     value="ミリタリー"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ミリタリー
                 </label>
@@ -719,7 +731,7 @@
                     name="question_04"
                     value="モノトーン"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   モノトーン
                 </label>
@@ -729,7 +741,7 @@
                     name="question_04"
                     value="モード"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   モード
                 </label>
@@ -739,7 +751,7 @@
                     name="question_04"
                     value="森系"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   森系
                 </label>
@@ -749,7 +761,7 @@
                     name="question_04"
                     value="ラグジュアリー"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ラグジュアリー
                 </label>
@@ -759,7 +771,7 @@
                     name="question_04"
                     value="ロック"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ロック
                 </label>
@@ -769,7 +781,7 @@
                     name="question_04"
                     value="ロリータ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ロリータ
                 </label>
@@ -779,7 +791,7 @@
                     name="question_04"
                     value="和服"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   和服
                 </label>
@@ -791,6 +803,9 @@
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -850,6 +865,9 @@
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -905,10 +923,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                7. Tシャツやポロシャツにいくらかけますか？
+                7. 普段、トップスにいくらかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -964,10 +985,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                8. シャツやセーターにいくらかけますか？
+                8. 普段、ボトムスにいくらかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1023,10 +1047,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                9. パンツやデニムにいくらかけますか？
+                9. 普段、アウターにいくらかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1082,10 +1109,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                10. アウターにいくらかけますか？
+                10. 普段、靴にいくらかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1141,10 +1171,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                11. 靴にいくらかけますか？
+                11. 普段、アクセサリーやバッグにいくらかけますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1200,10 +1233,13 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                12. 好きな色を選んで下さい。 当てはまるものを全て選んで下さい。
+                12. 好きな色を選んで下さい。 複数選択可能（最大3つ）
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1211,7 +1247,7 @@
                     name="question_12"
                     value="黒"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   黒
                 </label>
@@ -1221,7 +1257,7 @@
                     name="question_12"
                     value="白"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   白
                 </label>
@@ -1231,7 +1267,7 @@
                     name="question_12"
                     value="青"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   青
                 </label>
@@ -1241,7 +1277,7 @@
                     name="question_12"
                     value="赤"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   赤
                 </label>
@@ -1251,7 +1287,7 @@
                     name="question_12"
                     value="黄"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   黄
                 </label>
@@ -1261,7 +1297,7 @@
                     name="question_12"
                     value="緑"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   緑
                 </label>
@@ -1271,7 +1307,7 @@
                     name="question_12"
                     value="紺"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   紺
                 </label>
@@ -1281,7 +1317,7 @@
                     name="question_12"
                     value="紫"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   紫
                 </label>
@@ -1291,7 +1327,7 @@
                     name="question_12"
                     value="茶"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   茶
                 </label>
@@ -1301,7 +1337,7 @@
                     name="question_12"
                     value="ピンク"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   ピンク
                 </label>
@@ -1311,7 +1347,7 @@
                     name="question_12"
                     value="カーキ"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   カーキ
                 </label>
@@ -1321,7 +1357,7 @@
                     name="question_12"
                     value="グレー"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   グレー
                 </label>
@@ -1331,7 +1367,7 @@
                     name="question_12"
                     value="金"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   金
                 </label>
@@ -1341,7 +1377,7 @@
                     name="question_12"
                     value="銀"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   銀
                 </label>
@@ -1354,6 +1390,9 @@
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
@@ -1361,7 +1400,7 @@
                     name="question_13"
                     value="柄"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
                   柄
                 </label>
@@ -1369,30 +1408,33 @@
                   <input
                     type="checkbox"
                     name="question_13"
-                    value="モノトーン"
+                    value="シンプル"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
-                  モノトーン
+                  シンプル
                 </label>
                 <label class="check-button">
                   <input
                     type="checkbox"
                     name="question_13"
-                    value="ミックス"
+                    value="どちらとも"
                     style="display: none;"
-                    onchange="handleChangeCheckbox()"
+                    onchange="handleChangeCheckbox(this)"
                   />
-                  ミックス
+                  どちらとも
                 </label>
               </div>
             </div>
             <div class="wrap-question">
               <p class="question">
-                14. どんなブランドが好きか教えてください。
+                14. どんなブランドが好きですか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <textarea
                 name="question_14"
                 id="question_14"
@@ -1401,27 +1443,18 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                15. どんなコーディネートを提案して欲しいですか？
+                15. どんなブランドを提案して欲しいですか？
               </p>
             </div>
             <div class="wrap-answer">
-              <textarea
-                name="question_15"
-                id="question_15"
-                class="answer-textarea"
-              ></textarea>
-            </div>
-            <div class="wrap-question">
-              <p class="question">
-                16. どんなブランドを提案して欲しいですか？
-              </p>
-            </div>
-            <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <div class="check-buttons">
                 <label class="check-button">
                   <input
                     type="radio"
-                    name="question_16"
+                    name="question_15"
                     value="自分が知っているブランド"
                     style="display: none;"
                     onchange="handleChangeRadio()"
@@ -1431,7 +1464,7 @@
                 <label class="check-button">
                   <input
                     type="radio"
-                    name="question_16"
+                    name="question_15"
                     value="自分が知らないブランド"
                     style="display: none;"
                     onchange="handleChangeRadio()"
@@ -1441,33 +1474,56 @@
                 <label class="check-button">
                   <input
                     type="radio"
-                    name="question_16"
-                    value="ミックス"
+                    name="question_15"
+                    value="どちらとも"
                     style="display: none;"
                     onchange="handleChangeRadio()"
                   />
-                  ミックス
+                  どちらとも
                 </label>
               </div>
             </div>
             <div class="wrap-question">
               <p class="question">
-                17. どんな歌手やジャンルが好きですか？
+                16. どんなコーディネートを提案して欲しいですか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <textarea
-                name="question_17"
-                id="question_17"
+                name="question_16"
+                id="question_16"
                 class="answer-textarea"
               ></textarea>
             </div>
             <div class="wrap-question">
               <p class="question">
-                18. なぜこのスタイリストを選びましたか？
+                17.
+                好きな有名人や歌のジャンルなど、あなたの好みが分かるものを教えて下さい。
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
+              <textarea
+                name="question_17"
+                id="question_17"
+                class="answer-textarea"
+                placeholder="例）歌手の〇〇さん。インフルエンサーの〇〇さん。K-POP、EDMなど。"
+              ></textarea>
+            </div>
+            <div class="wrap-question">
+              <p class="question">
+                18. なぜこのファッショニスタを選びましたか？
+              </p>
+            </div>
+            <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <textarea
                 name="question_18"
                 id="question_18"
@@ -1476,22 +1532,29 @@
             </div>
             <div class="wrap-question">
               <p class="question">
-                19. スタイリストにどこでスタイリングして欲しいですか？
+                19. ファッショニスタにどこでコーディネートして欲しいですか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <textarea
                 name="question_19"
                 id="question_19"
                 class="answer-textarea"
+                placeholder="例）〇〇のお店やカフェ、オンラインなど。"
               ></textarea>
             </div>
             <div class="wrap-question">
               <p class="question">
-                20. スタイリストに伝えておきたいことはありますか？
+                20. ファッショニスタに伝えておきたいことはありますか？
               </p>
             </div>
             <div class="wrap-answer">
+              <!-- エラーメッセージ表示位置 -->
+              <p class="err-msg"></p>
+              <!-- エラーメッセージ　ここまで -->
               <textarea
                 name="question_20"
                 id="question_20"
@@ -1500,7 +1563,7 @@
             </div>
           </div>
 
-          <input type="submit" value="回答する or 次へ" id="submit" />
+          <input type="submit" value="保存する" id="submit" />
         </form>
       </div>
     </main>
@@ -1678,25 +1741,56 @@
           elem.parentNode.classList.remove('checked');
         });
       };
+
       // チェックボックスのスタイル変更メソッド
-      let handleChangeCheckbox = () => {
-        let checkedButtons = document.querySelectorAll(
-          'input[type="checkbox"]:checked'
+      let handleChangeCheckbox = (e) => {
+        let checkedElems = document.querySelectorAll(
+          `input[name="${e.name}"]:checked`
         );
-        let notCheckedButtons = document.querySelectorAll(
-          'input[type="checkbox"]:not(:checked)'
+        let notCheckedElems = document.querySelectorAll(
+          `input[name="${e.name}"]:not(:checked)`
         );
-        Array.from(checkedButtons).forEach((elem) => {
+        // チェック済みボタンのスタイル変更
+        Array.from(checkedElems).forEach((elem) => {
           elem.parentNode.classList.add('checked');
         });
-        Array.from(notCheckedButtons).forEach((elem) => {
-          elem.parentNode.classList.remove('checked');
-        });
+        // 未チェックボタンのスタイル変更
+        if (checkedElems.length >= 3) {
+          // 3つチェックが入った場合
+          // 未チェックのボタンにdisabledスタイル（クラス）を追加
+          // 未チェックのチェックボックスをチェック不可に
+          Array.from(notCheckedElems).forEach((elem) => {
+            elem.parentNode.classList.remove('checked');
+            elem.parentNode.classList.add('disabled');
+            elem.disabled = true;
+          });
+        } else {
+          // チェックが3つ未満の場合
+          // 未チェックボタンを通常のスタイルに＝＞クラスを削除
+          // 未チェックのチェックボックスをチェック可能に
+          Array.from(notCheckedElems).forEach((elem) => {
+            elem.parentNode.classList.remove('checked');
+            elem.parentNode.classList.remove('disabled');
+            elem.disabled = false;
+          });
+        }
       };
-      // 画面読み込み時の処理
+
+      // ウィンドウ読み込み時にすでにチェックの入っているボタンのスタイルを変更する
       window.onload = () => {
+        let question04 = document
+          .querySelectorAll('input[name="question_04"]')
+          .item(0);
+        let question12 = document
+          .querySelectorAll('input[name="question_12"]')
+          .item(0);
+        let question13 = document
+          .querySelectorAll('input[name="question_13"]')
+          .item(0);
         handleChangeRadio();
-        handleChangeCheckbox();
+        handleChangeCheckbox(question04);
+        handleChangeCheckbox(question12);
+        handleChangeCheckbox(question13);
       };
     </script>
   </body>
