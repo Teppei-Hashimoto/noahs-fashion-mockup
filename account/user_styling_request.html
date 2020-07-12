@@ -1396,31 +1396,31 @@
               <div class="check-buttons">
                 <label class="check-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     name="question_13"
                     value="柄"
                     style="display: none;"
-                    onchange="handleChangeCheckbox(this)"
+                    onchange="handleChangeRadio()"
                   />
                   柄
                 </label>
                 <label class="check-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     name="question_13"
                     value="シンプル"
                     style="display: none;"
-                    onchange="handleChangeCheckbox(this)"
+                    onchange="handleChangeRadio()"
                   />
                   シンプル
                 </label>
                 <label class="check-button">
                   <input
-                    type="checkbox"
+                    type="radio"
                     name="question_13"
                     value="どちらとも"
                     style="display: none;"
-                    onchange="handleChangeCheckbox(this)"
+                    onchange="handleChangeRadio()"
                   />
                   どちらとも
                 </label>
@@ -1784,13 +1784,9 @@
         let question12 = document
           .querySelectorAll('input[name="question_12"]')
           .item(0);
-        let question13 = document
-          .querySelectorAll('input[name="question_13"]')
-          .item(0);
         handleChangeRadio();
         handleChangeCheckbox(question04);
         handleChangeCheckbox(question12);
-        handleChangeCheckbox(question13);
       };
     </script>
   </body>
