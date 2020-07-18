@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>サービス情報編集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/fashionista_edit_service.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- サービス情報登録　2工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">サービス情報編集</h3>
+
+        <form method="post">
+          <p class="item-service">サービス提供対象者　性別(複数選択可)</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+          <p class="err-msg"></p>
+          <p class="err-msg"></p>
+
+          <p class="explanation">
+            ※登録者の性別ではなくサービス提供の対象となるユーザーの性別を選択してください
+          </p>
+
+          <div id="check-gender" class="check-buttons">
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="gender"
+                value="男性"
+                style="display: none;"
+                onchange="toggleCheckedGender(this)"
+              />
+              男性
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="gender"
+                value="女性"
+                style="display: none;"
+                onchange="toggleCheckedGender(this)"
+              />
+              女性
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="gender"
+                value="中性"
+                style="display: none;"
+                onchange="toggleCheckedGender(this)"
+              />
+              中性
+            </label>
+          </div>
+
+          <p class="item-service">メインエリア</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+
+          <p class="explanation">
+            主にサービスを提供するエリアを８文字以内で入力してください
+          </p>
+          <input
+            id="area"
+            type="text"
+            name="place"
+            value=""
+            maxlength="8"
+            placeholder="例）原宿"
+          />
+
+          <p class="item-service">ジャンル</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+
+          <p class="explanation">ジャンル(3個まで選択可)</p>
+
+          <div id="check-genre" class="check-buttons">
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="アウトドア"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              アウトドア
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="青文字"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              青文字
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="赤文字"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              赤文字
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="アメカジ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              アメカジ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="裏原"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              裏原
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="OL"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              OL
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="大人女子"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              大人女子
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="オラオラ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              オラオラ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="エスニック"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              エスニック
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="海外"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              海外
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="カジュアル"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              カジュアル
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ガーリッシュ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ガーリッシュ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ギャル"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ギャル
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="キレイめ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              キレイめ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="キレカジ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              キレカジ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="コスプレ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              コスプレ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ゴスロリ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ゴスロリ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="コンサバ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              コンサバ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="サロン"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              サロン
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ジェンダーレス"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ジェンダーレス
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="渋谷系"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              渋谷系
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="女子大生"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              女子大生
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="シンプル"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              シンプル
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ストリート"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ストリート
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="スニーカー"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              スニーカー
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="スポーツ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              スポーツ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="セクシー"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              セクシー
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="セレブ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              セレブ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ハイブランド"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ハイブランド
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="原宿系"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              原宿系
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="パンク"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              パンク
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ビジネス"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ビジネス
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="V系"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              V系
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="フェミニン"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              フェミニン
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="プチプラ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              プチプラ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="古着"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              古着
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ボーイッシュ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ボーイッシュ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ホスト"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ホスト
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ミリタリー"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ミリタリー
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="モノトーン"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              モノトーン
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="モード"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              モード
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="森系"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              森系
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ラグジュアリー"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ラグジュアリー
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ロック"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ロック
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="ロリータ"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              ロリータ
+            </label>
+            <label class="check-button">
+              <input
+                type="checkbox"
+                name="genre"
+                value="和服"
+                style="display: none;"
+                onchange="toggleCheckedGenre(this)"
+              />
+              和服
+            </label>
+          </div>
+
+          <div class="buttons">
+            <input
+              class="back"
+              type="button"
+              value="戻る"
+              onClick="history.back()"
+            />
+            <input type="hidden" name="fashionista_token" value="" />
+            <input class="next" type="submit" name="next" value="次へ" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      // 性別チェックボタンのトグルメソッド
+      let toggleCheckedGender = (e) => {
+        e.parentNode.classList.toggle('checked');
+      };
+
+      // ジャンルチェックボタンのトグルメソッド
+      let toggleCheckedGenre = (e) => {
+        let count = document.querySelectorAll('input[name="genre"]:checked')
+          .length;
+        let notChecked = document.querySelectorAll(
+          'input[name="genre"]:not(:checked)'
+        );
+        // 3つ選択するとチェックされていない項目を disabled にする
+        if (count >= 3) {
+          Array.from(notChecked).forEach((elem) => {
+            elem.parentNode.classList.add('disabled');
+            elem.disabled = true;
+          });
+        } else {
+          Array.from(notChecked).forEach((elem) => {
+            elem.parentNode.classList.remove('disabled');
+            elem.disabled = false;
+          });
+        }
+        e.parentNode.classList.toggle('checked');
+      };
+
+      // ウィンドウ読み込み時の処理
+      window.onload = () => {
+        // チェック済みの性別チェックボタンのスタイル変更
+        let checkedGender = document.querySelectorAll(
+          'input[name="gender"]:checked'
+        );
+        Array.from(checkedGender).forEach((elem) => {
+          elem.parentNode.classList.add('checked');
+        });
+
+        // チェック済みのジャンルチェックボタンのスタイル変更
+        let checkedGenre = document.querySelectorAll(
+          'input[name="genre"]:checked'
+        );
+        let notCheckedGenre = document.querySelectorAll(
+          'input[name="genre"]:not(:checked)'
+        );
+        Array.from(checkedGenre).forEach((elem) => {
+          elem.parentNode.classList.add('checked');
+        });
+        if (checkedGenre.length >= 3) {
+          Array.from(notCheckedGenre).forEach((elem) => {
+            elem.parentNode.classList.add('disabled');
+            elem.disabled = true;
+          });
+        }
+      };
+    </script>
+  </body>
+</html>
