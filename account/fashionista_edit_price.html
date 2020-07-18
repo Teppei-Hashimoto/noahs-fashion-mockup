@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>サービス情報編集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/fashionista_edit_price.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- サービス情報登録　3工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">サービス情報編集</h3>
+
+        <form method="post">
+          <p class="item-service">１時間の料金</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+
+          <p class="explanation">
+            １時間当たりのコーディネート提案サービス提供金額を税抜き価格で入力してください<br />
+            ※ 設定可能金額は<span class="important">3,000円以上</span>です
+          </p>
+
+          <div id="service-price">
+            <span class="jpy">¥</span>
+            <input
+              id="price"
+              type="number"
+              name="price"
+              min="3000"
+              step="100"
+              value="3000"
+              oninput="handleInputPrice(this)"
+            />
+          </div>
+
+          <p class="item-service">表記価格(税込)</p>
+          <p class="value-price">¥ <span id="calc-price1">3300</span></p>
+          <p class="item-service">プラットフォーム利用料(20%)</p>
+          <p class="value-price">¥ <span id="calc-price2">660</span></p>
+          <p class="item-service">１時間の報酬予定金額</p>
+          <p class="value-price">¥ <span id="calc-price3">2640</span></p>
+
+          <div class="buttons">
+            <input
+              class="back"
+              type="button"
+              value="戻る"
+              onClick="history.back()"
+            />
+            <input type="hidden" name="fashionista_token" value="" />
+            <input class="next" type="submit" name="next" value="次へ" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      // 消費税（10%）
+      const tax = 0.1;
+      // プラットフォーム利用料（20%）
+      const fee = 0.2;
+      let priceElem1 = document.getElementById('calc-price1');
+      let priceElem2 = document.getElementById('calc-price2');
+      let priceElem3 = document.getElementById('calc-price3');
+
+      let handleInputPrice = (e) => {
+        let price = Math.trunc(Number.parseInt(e.value));
+        // 入力値の整数チェック
+        if (Number.isInteger(price)) {
+          // 表記価格
+          let price1 = calcPrice1(price);
+          priceElem1.textContent = price1;
+
+          // プラットフォーム利用料
+          let price2 = calcPrice2(price1);
+          priceElem2.textContent = price2;
+
+          // 1時間あたりの報酬予定金額
+          priceElem3.textContent = calcPrice3(price1, price2);
+        } else {
+          // 数値が入力されていない場合の処理
+          priceElem1.textContent = ' - ';
+          priceElem2.textContent = ' - ';
+          priceElem3.textContent = ' - ';
+        }
+      };
+
+      // 表記価格を計算するメソッド
+      let calcPrice1 = (price) => {
+        return price + Math.trunc(price * tax);
+      };
+
+      // プラットフォーム利用料（20%）を計算するメソッド
+      let calcPrice2 = (price) => {
+        return Math.trunc(price * fee);
+      };
+
+      // 1時間あたりの報酬予定金額を計算するメソッド
+      let calcPrice3 = (price1, price2) => {
+        return price1 - price2;
+      };
+    </script>
+  </body>
+</html>
