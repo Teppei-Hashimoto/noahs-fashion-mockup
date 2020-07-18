@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>サービス情報編集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/fashionista_edit_content.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- サービス情報登録　4工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">サービス情報編集</h3>
+
+        <form method="post">
+          <p class="item-service">タイトル</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+
+          <p class="explanation">
+            コーディネート提案サービスのタイトルを<span class="important"
+              >15文字以内</span
+            >で記入してください
+          </p>
+
+          <input
+            type="text"
+            id="content-title"
+            name="content_title"
+            value=""
+            maxlength="15"
+            placeholder="例）原宿お散歩ツアー"
+            required
+          />
+
+          <p class="item-service">サービス内容</p>
+          <!-- エラーメッセージ表示位置 -->
+          <p class="err-msg"></p>
+
+          <!-- 説明文があれば下のコメントアウトを解除して記入してね -->
+          <!-- <p class="explanation">120文字以上</p> -->
+
+          <textarea
+            name="content"
+            id="content"
+            placeholder="120文字以上でサービスの内容を記入してください"
+            minlength="120"
+            required
+          ></textarea>
+
+          <div class="buttons">
+            <input
+              class="back"
+              type="button"
+              value="戻る"
+              onClick="history.back()"
+            />
+            <input type="hidden" name="fashionista_token" value="" />
+            <input class="next" type="submit" name="next" value="確認画面へ" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  </body>
+</html>

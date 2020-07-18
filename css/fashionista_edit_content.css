@@ -1,0 +1,161 @@
+@charset "UTF-8";
+main {
+  padding-top: 0;
+  margin-bottom: 80px;
+}
+
+/* 現在が何工程目かを表す○ */
+.procs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.procs .proc {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  background-color: #f5f5f5;
+}
+.procs .proc:nth-of-type(4) {
+  background-color: #98e4fa;
+  width: 16px;
+  height: 16px;
+  margin: 0 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* サブタイトルのスタイル */
+.subtitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* エラーメッセージのスタイル */
+main .err-msg {
+  color: #e7312d;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0px;
+}
+
+/* マイスタイル */
+main .wrap {
+  padding: 0 20px;
+}
+
+main .explanation {
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 17px;
+  text-align: center;
+}
+main .important {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.item-service {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.buttons .back,
+.buttons .next {
+  width: calc(50% - 10px);
+  height: 38px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f54ea2;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#content-title {
+  display: block;
+  width: 280px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#content {
+  resize: none;
+  display: block;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  line-height: 26px;
+  width: 100%;
+  max-width: 769px;
+  height: 200px;
+  padding: 5px;
+  margin: 0 auto 40px;
+}
+
+@media screen and (min-width: 769px) {
+  main .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* サブタイトルのスタイル */
+  .subtitle {
+    font-size: 2.6rem;
+  }
+
+  .item-service {
+    font-size: 1.8rem;
+  }
+
+  main .explanation {
+    font-size: 1.4rem;
+    line-height: 19px;
+    margin-bottom: 5px;
+  }
+
+  .buttons .back,
+  .buttons .next {
+    width: calc(50% - 20px);
+  }
+  .buttons .back:hover,
+  .buttons .next:hover {
+    cursor: pointer;
+  }
+
+  /* エラーメッセージのスタイル */
+  main .err-msg {
+    font-size: 1.4rem;
+  }
+
+  #content-title {
+    width: 320px;
+  }
+
+  #content {
+    font-size: 1.8rem;
+  }
+}
