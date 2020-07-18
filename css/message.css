@@ -96,17 +96,19 @@ main {
   padding: 0px;
 }
 main .wrap {
-  background-color: #98e4fa;
-  padding: 60px 10px;
   max-width: 640px;
   margin: 0 auto;
   box-sizing: border-box;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
 }
 
 #message-box {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: #98e4fa;
+  padding: 60px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
 }
 #message-box .time {
   display: block;
@@ -186,8 +188,8 @@ main .wrap {
     cursor: pointer;
   }
 
-  main .wrap {
-    padding: 100px 10px;
+  #message-box {
+    padding: 100px 10px 80px;
   }
 
   .wrap-your-message,
