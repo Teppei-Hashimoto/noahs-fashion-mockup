@@ -35,3 +35,17 @@ Mockup - Noah's Fashion
       - [口座情報登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_edit/card_register_bank.html)
         - [口座情報確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_edit/card_register_bank_confirm.html)
           - [口座情報登録完了](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_edit/card_register_complete.html)
+  - [プロフィール編集](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_profile.html)
+  - サービス情報編集
+    - [サービス写真](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_images.html)
+      - [サービス提供対象者性別、メインエリア、ジャンル](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_service.html)
+        - [価格](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_price.html)
+          - [サービス内容](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_content.html)
+            - [編集内容確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_edit_confirm.html)
+- ファッショニスタ新規登録
+  - [プロフィール](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_profile2.html)
+    - [サービス写真](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_images.html)
+      - [サービス提供対象者性別、メインエリア、ジャンル](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_service.html)
+        - [価格](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_price.html)
+          - [サービス内容](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_content.html)
+            - [登録内容確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/fashionista_registration_confirm.html)
