@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>サービス情報編集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/fashionista_edit_images.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <!-- ローディング表示 -->
+    <div class="loader-wrap hide">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- サービス情報編集　1工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">サービス情報編集</h3>
+
+        <p class="item-service">サービス写真登録</p>
+
+        <!-- エラーメッセージ表示位置 -->
+        <p class="err-msg"></p>
+        <p id="error1_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error2_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error3_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error4_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error5_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error6_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error7_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error8_message" class="err-msg"></p>
+        <p class="err-msg"></p>
+        <p id="error9_message" class="err-msg"></p>
+
+        <p class="explanation">
+          コーディネート提案サービスの参考となる写真やファッショニスタ自身をアピールする写真を登録してください
+        </p>
+
+        <form method="post">
+          <div class="add-imgs">
+            <label for="fashionista_image1" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_1"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image1"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image1_url" value="" id="image1_url" />
+
+            <label for="fashionista_image2" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_2"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image2"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image2_url" value="" id="image2_url" />
+
+            <label for="fashionista_image3" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_3"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image3"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image3_url" value="" id="image3_url" />
+
+            <label for="fashionista_image4" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_4"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image4"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image4_url" value="" id="image4_url" />
+
+            <label for="fashionista_image5" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_5"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image5"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image5_url" value="" id="image5_url" />
+
+            <label for="fashionista_image6" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_6"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image6"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image6_url" value="" id="image6_url" />
+
+            <label for="fashionista_image7" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_7"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image7"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image7_url" value="" id="image7_url" />
+
+            <label for="fashionista_image8" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_8"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image8"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image8_url" value="" id="image8_url" />
+
+            <label for="fashionista_image9" class="add-img">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="image_9"
+                class="code-img" /><span class="icon-plus"></span>
+              <input
+                type="file"
+                name=""
+                value=""
+                id="fashionista_image9"
+                style="display: none;"
+            /></label>
+
+            <input type="hidden" name="image9_url" value="" id="image9_url" />
+          </div>
+
+          <div class="buttons">
+            <input
+              class="back"
+              type="button"
+              value="戻る"
+              onClick="history.back()"
+            />
+            <input type="hidden" name="fashionista_token" value="" />
+            <input class="next" type="submit" name="next" value="次へ" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script>
+      $('#fashionista_image1').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_1').attr('src', response.src);
+            $('#image1_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error1_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image2').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_2').attr('src', response.src);
+            $('#image2_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error2_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image3').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_3').attr('src', response.src);
+            $('#image3_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error3_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image4').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_4').attr('src', response.src);
+            $('#image4_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error4_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image5').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_5').attr('src', response.src);
+            $('#image5_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error5_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image6').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_6').attr('src', response.src);
+            $('#image6_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error6_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image7').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_7').attr('src', response.src);
+            $('#image7_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error7_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image8').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_8').attr('src', response.src);
+            $('#image8_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error8_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+
+      $('#fashionista_image9').on('change', function () {
+        let file = $(this).prop('files')[0];
+        let fd = new FormData();
+        let editIcon = $(this).prev(); // fileフォームの兄要素（span.icon-plus）
+        fd.append('image', file);
+        $.ajax({
+          url: 'fashionista_save_image.php.php',
+          type: 'POST',
+          processData: false,
+          contentType: false,
+          data: fd,
+          //リクエストが完了するまで実行される
+          beforeSend: function () {
+            $('.loader-wrap').removeClass('hide'); //クラス取り除く
+          },
+        }).done((response) => {
+          if (response.status === 'success') {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#image_9').attr('src', response.src);
+            $('#image9_url').attr('value', response.filename);
+            editIcon.removeClass('icon-plus').addClass('icon-remove');
+          } else {
+            $('.loader-wrap').addClass('hide'); //クラス付与
+            $('#error9_message').text(response.error_log);
+          }
+        }); //done( response
+      });
+    </script>
+  </body>
+</html>
