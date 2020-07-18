@@ -1,0 +1,214 @@
+@charset "UTF-8";
+main {
+  padding-top: 0;
+  margin-bottom: 80px;
+}
+
+/* 現在が何工程目かを表す○ */
+.procs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.procs .proc {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  background-color: #f5f5f5;
+}
+.procs .proc:nth-of-type(5) {
+  background-color: #98e4fa;
+  width: 16px;
+  height: 16px;
+  margin: 0 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* サブタイトルのスタイル */
+.subtitle,
+.subsubtitle {
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.subtitle {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.subsubtitle {
+  font-size: 2rem;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+/* マイスタイル */
+main .wrap {
+  padding: 0 20px;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container-info p {
+  line-height: 1;
+  text-align: center;
+}
+.container-info .item {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 10px;
+}
+.container-info p[class^='value'] {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.container-info p.value-detail {
+  width: 100%;
+  max-width: 769px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  word-break: break-all;
+}
+
+.container-info .content .break {
+  display: none;
+}
+
+.container-imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fashionista-img {
+  display: block;
+  width: 27vw;
+  height: calc(27vw * 5 / 4);
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0px 0px 20px;
+}
+
+/* チェックボタン */
+.check-buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.check-buttons div[class^='button-'] {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #bdbdbd;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #bdbdbd;
+  font-size: 1.6rem;
+  line-height: 21px;
+  padding: 0 10px;
+  margin: 5px;
+}
+.check-buttons div[class^='button-'].checked,
+.check-buttons div.button-genre {
+  border-color: #f54ea2;
+  color: #f54ea2;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#container-gender,
+#container-genre {
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+}
+.buttons .back,
+.buttons .next {
+  width: calc(50% - 10px);
+  height: 38px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f54ea2;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 769px) {
+  main .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* サブタイトルのスタイル */
+  .subtitle {
+    font-size: 2.6rem;
+  }
+
+  .container-info .item {
+    font-size: 1.4rem;
+    margin: 20px 0;
+  }
+  .container-info .value {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .container-info p.value-detail {
+    margin-bottom: 40px;
+  }
+
+  .content-imgs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-imgs {
+    width: 100%;
+    max-width: 769px;
+    justify-content: center;
+  }
+
+  .fashionista-img {
+    width: 200px;
+    height: calc(200px * 5 / 4);
+    margin: 0px 20px 20px;
+  }
+
+  .buttons .back,
+  .buttons .next {
+    width: calc(50% - 20px);
+  }
+  .buttons .back:hover,
+  .buttons .next:hover {
+    cursor: pointer;
+  }
+}

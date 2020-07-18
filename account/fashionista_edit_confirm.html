@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>登録内容確認</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/icon_fonts.css" />
+    <link rel="stylesheet" href="../css/tabbar.css" />
+    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../css/fashionista_edit_confirm.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">Noah's Fashion</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <!-- 何工程目かを表示 -->
+        <!-- 情報登録確認　5工程目 -->
+        <div class="procs">
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+          <span class="proc"></span>
+        </div>
+
+        <h3 class="subtitle">登録内容確認</h3>
+
+        <div class="container-info">
+          <p class="subsubtitle">サービス情報</p>
+          <div class="content-imgs">
+            <p class="item">サービス写真</p>
+            <div class="container-imgs">
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image1"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image2"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image3"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image4"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image5"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image6"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image7"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image8"
+                class="fashionista-img"
+              />
+              <img
+                src="../images/blank_off-white.jpg"
+                alt=""
+                id="fashionista_image9"
+                class="fashionista-img"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <p class="item">サービス提供対象者　性別</p>
+            <div id="container-gender" class="check-buttons">
+              <div class="button-gender checked">男性</div>
+              <div class="button-gender checked">女性</div>
+              <div class="button-gender">中性</div>
+            </div>
+          </div>
+          <div class="content">
+            <p class="item">メインエリア</p>
+            <p class="value">原宿</p>
+          </div>
+          <div class="content">
+            <p class="item">ジャンル</p>
+            <div id="container-genre" class="check-buttons">
+              <div class="button-genre">カジュアル</div>
+              <div class="button-genre">ジェンダーレス</div>
+              <div class="button-genre">原宿系</div>
+            </div>
+          </div>
+          <div class="content">
+            <p class="item">1時間の料金</p>
+            <p class="value"><span class="unit-jpy">¥ </span>3000</p>
+          </div>
+          <div class="content">
+            <p class="item">タイトル</p>
+            <p class="value">原宿お散歩ツアー</p>
+          </div>
+          <div class="content">
+            <p class="item">サービス内容</p>
+            <p class="value-detail">
+              ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ＜120文字＞
+            </p>
+          </div>
+        </div>
+        <!-- container-info -->
+
+        <!-- このformタグの外でhiddenを記述する場合は、
+        　　　form="confirm-fshnst-info" 属性を記述してください。
+      　　　　例）<input type="hidden" name="" value="" form="confirm-fshnst-info"> -->
+        <form method="post" action="" id="confirm-fshnst-info">
+          <input type="hidden" name="fashionista_token" value="" />
+          <div class="buttons">
+            <input
+              type="button"
+              value="戻る"
+              id="back"
+              class="back"
+              onClick="history.back()"
+            />
+            <input type="submit" value="登録する" id="next" class="next" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  </body>
+</html>
