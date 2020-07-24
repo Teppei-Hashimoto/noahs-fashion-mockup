@@ -15,6 +15,7 @@ Mockup - Noah's Fashion
     - [レビュー確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/review_confirm.html)
       - [レビュー投稿完了](https://teppei-hashimoto.github.io/noahs-fashion-mockup/review_complete.html)
 - [マイページ](https://teppei-hashimoto.github.io/noahs-fashion-mockup/mypage.html)
+  - [お知らせ一覧](https://teppei-hashimoto.github.io/noahs-fashion-mockup/notification_list.html)
 - ユーザー登録
   - [顔写真登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/user_registration_selfie.html)
     - [全身写真登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/user_registration_coordinate.html)
