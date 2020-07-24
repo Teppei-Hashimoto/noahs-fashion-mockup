@@ -1,0 +1,114 @@
+@charset "UTF-8";
+main {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+}
+main .wrap {
+  width: 100%;
+}
+
+#notification-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* 日付 */
+.notification-date {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #555555;
+  /* display: block; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* バッジエリア */
+.notification-badge {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 重要バッジ */
+.badge-important {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #e7312d;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.badge-important::before {
+  content: '重要';
+}
+/* Newバッジ */
+.badge-new {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #f54ea2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.badge-new::before {
+  content: 'New';
+}
+
+/* お知らせ内容 */
+.notification-content {
+  width: calc(100% - 80px);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+/* お知らせメッセージ */
+.notification-message {
+  font-size: 1.6rem;
+  line-height: 1;
+  width: calc(100% - 20px);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  color: #232231;
+}
+
+@media screen and (min-width: 769px) {
+  main .wrap {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+
+  .badge-important,
+  .badge-new {
+    font-size: 1.4rem;
+  }
+
+  .notification-date {
+    font-size: 1.4rem;
+  }
+
+  .notification-message {
+    font-size: 1.8rem;
+  }
+}

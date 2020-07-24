@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>お知らせ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/notification_list.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">お知らせ</h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="探す" title="探す" class="active-menu"
+                ><span aria-hidden="true" class="icon-search"></span
+                ><span class="menu-search">探す</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="お気に入り" title="お気に入り"
+                ><span aria-hidden="true" class="icon-heart-o"></span
+                ><span class="menu-favorite">お気に入り</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="メッセージ" title="メッセージ"
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
+                ><span class="menu-message">メッセージ</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="予約確認" title="予約確認"
+                ><span aria-hidden="true" class="icon-event_note"></span
+                ><span class="menu-schedule">予約確認</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="マイページ" title="マイページ"
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
+                ><span class="menu-mypage">マイページ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <form action="" method="post" id="notification-list">
+          <!-- お知らせアイテムのテンプレート -->
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <!-- 以下のdiv要素を記述すると「バッジ」が表示される -->
+              <!-- 表示しない場合は記述を省略する -->
+              <!-- important:重要バッジ -->
+              <!-- new:Newバッジ -->
+              <span class="badge-important"></span>
+              <!-- <span class="badge-new"></span> -->
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                ご本人様確認が必要です
+              </p>
+            </div>
+            <!-- formaction="" に遷移先のページを記述する -->
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <!-- お知らせアイテムのテンプレート　ここまで -->
+
+          <!-- 以下はサンプルアイテム -->
+          <label class="notification-item">
+            <span class="notification-date">1月1日</span>
+            <div class="notification-badge"></div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">2020-07-24</span>
+            <div class="notification-badge">
+              <span class="badge-important"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <span class="badge-new"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge"></div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <span class="badge-important"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <span class="badge-new"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge"></div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <span class="badge-important"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <label class="notification-item">
+            <span class="notification-date">12月12日</span>
+            <div class="notification-badge">
+              <span class="badge-new"></span>
+            </div>
+            <div class="notification-content">
+              <p class="notification-message">
+                あああああああああああああああああああああああああああ
+              </p>
+            </div>
+            <input type="submit" style="display: none;" formaction="" />
+          </label>
+          <!-- サンプルアイテム　ここまで -->
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  </body>
+</html>
