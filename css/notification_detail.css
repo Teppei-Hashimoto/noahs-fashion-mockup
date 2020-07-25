@@ -98,6 +98,12 @@ main .wrap {
 .card-content ul li {
   margin-left: 2px;
 }
+.card-content img {
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 10px;
+}
 
 @media screen and (min-width: 769px) {
   main .wrap {
@@ -124,6 +130,9 @@ main .wrap {
     font-size: 6rem;
   }
 
+  .card-header {
+    padding: 30px 20px 5px;
+  }
   .card-title {
     font-size: 1.8rem;
   }
@@ -134,5 +143,6 @@ main .wrap {
   }
   .card-content {
     font-size: 1.6rem;
+    padding: 20px;
   }
 }
