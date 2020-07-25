@@ -43,23 +43,13 @@ main .wrap {
 }
 .card-header {
   position: relative;
-  padding: 25px 10px 5px;
-}
-
-/* メッセージのスタイル */
-.card-content {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  font-size: 1.4rem;
-  line-height: 1;
-  color: #232231;
+  padding: 25px 20px 5px;
 }
 
 .card-title {
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 18px;
   color: #232231;
 }
 .card-date {
@@ -71,12 +61,22 @@ main .wrap {
   color: #555555;
 }
 
+/* メッセージのスタイル */
+.card-content {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 16px;
+  color: #232231;
+}
+
 .card-content > * {
-  padding: 5px;
+  padding: 5px 0px;
 }
 
 .card-content p {
-  line-height: 1;
+  line-height: 20px;
 }
 .card-content a {
   color: #f54ea2;
@@ -135,6 +135,7 @@ main .wrap {
   }
   .card-title {
     font-size: 1.8rem;
+    line-height: 20px;
   }
   .card-date {
     font-size: 1.4rem;
@@ -143,6 +144,7 @@ main .wrap {
   }
   .card-content {
     font-size: 1.6rem;
+    line-height: 20px;
     padding: 20px;
   }
 }
