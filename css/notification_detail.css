@@ -1,0 +1,138 @@
+@charset "UTF-8";
+main {
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+}
+
+main .wrap {
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+/* ヘッダースタイル */
+#wrap-header {
+  position: relative;
+}
+#header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+/* 戻るボタン */
+#back-button {
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+#back-button .icon-keyboard_arrow_left {
+  font-size: 2.9rem;
+  color: #555555;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  margin: 10px 0px;
+}
+.card-header {
+  position: relative;
+  padding: 25px 10px 5px;
+}
+
+/* メッセージのスタイル */
+.card-content {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #232231;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #232231;
+}
+.card-date {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #555555;
+}
+
+.card-content > * {
+  padding: 5px;
+}
+
+.card-content p {
+  line-height: 1;
+}
+.card-content a {
+  color: #f54ea2;
+}
+.card-content ol,
+.card-content ul {
+  list-style-position: inside;
+  padding-left: 15px;
+}
+.card-content ol {
+  list-style-type: decimal;
+}
+.card-content ol li {
+  margin-left: 0px;
+}
+.card-content ul {
+  list-style-type: disc;
+}
+.card-content ul li {
+  margin-left: 2px;
+}
+
+@media screen and (min-width: 769px) {
+  main .wrap {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+
+  /* ヘッダースタイル */
+  #wrap-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #header-title {
+    display: block;
+    font-size: 2.8rem;
+    margin-left: 20px;
+  }
+  /* 戻るボタン */
+  #back-button {
+    position: static;
+  }
+  #back-button .icon-keyboard_arrow_left {
+    font-size: 6rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .card-date {
+    font-size: 1.4rem;
+    top: 10px;
+    right: 20px;
+  }
+  .card-content {
+    font-size: 1.6rem;
+  }
+}
