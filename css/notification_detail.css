@@ -33,6 +33,7 @@ main .wrap {
 }
 
 .card {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   border: none;
@@ -42,49 +43,81 @@ main .wrap {
   margin: 10px 0px;
 }
 .card-header {
-  position: relative;
   padding: 25px 20px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .card-title {
+  display: block;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 18px;
   color: #232231;
+  width: calc(100% - 50px);
+  flex-grow: 1;
 }
 .card-date {
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: 10px;
   font-size: 1.2rem;
   line-height: 1;
   color: #555555;
 }
 
+/* 重要バッジ */
+.badge-important {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 20px;
+  width: 40px;
+  height: 20px;
+  margin-right: 8px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #e7312d;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.badge-important::before {
+  content: '重要';
+}
+
 /* メッセージのスタイル */
 .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
-  font-size: 1.4rem;
   line-height: 16px;
   color: #232231;
 }
 
 .card-content > * {
-  padding: 5px 0px;
+  display: block;
+  padding: 10px 0px;
+  word-break: break-all;
+  font-size: 1.4rem;
 }
 
 .card-content p {
   line-height: 20px;
+  font-size: 1.4rem;
 }
 .card-content a {
-  color: #f54ea2;
+  color: #007aff;
 }
 .card-content ol,
 .card-content ul {
-  list-style-position: inside;
-  padding-left: 15px;
+  padding-left: 25px;
+  text-align: left;
 }
 .card-content ol {
   list-style-type: decimal;
@@ -103,6 +136,7 @@ main .wrap {
   box-sizing: border-box;
   max-width: 100%;
   padding: 10px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 769px) {
@@ -131,7 +165,7 @@ main .wrap {
   }
 
   .card-header {
-    padding: 30px 20px 5px;
+    padding: 30px 80px 5px;
   }
   .card-title {
     font-size: 1.8rem;
@@ -145,6 +179,9 @@ main .wrap {
   .card-content {
     font-size: 1.6rem;
     line-height: 20px;
-    padding: 20px;
+    padding: 20px 80px;
+  }
+  .card-content img {
+    max-width: 640px;
   }
 }
