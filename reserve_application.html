@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>予約リクエストを送る</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/reserve_application.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">予約リクエストを送る</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <div class="card-fshnst">
+          <img
+            src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
+            class="fshnst-img"
+          />
+          <div class="card-fshnst-r-elm">
+            <p class="item-fshnst">ファッショニスタ</p>
+            <p class="fshnst-name">あいうえおかきくけこさしすせそ</p>
+          </div>
+        </div>
+        <div class="subwrap">
+          <p class="item">メインエリア</p>
+          <p class="value">原宿</p>
+          <p class="item">日時</p>
+          <p class="value">
+            2020/12/20(月)<br class="newline" />
+            13:00 ~ 15:00
+          </p>
+          <hr width="100%" style="margin-bottom: 20px;" />
+          <p class="item">価格</p>
+          <p class="value">¥ 3,000 / 時間</p>
+          <p class="item">所要時間</p>
+          <p class="value">2.0時間</p>
+          <hr width="100%" style="margin-bottom: 20px;" />
+          <p class="item-total">合計(税込)</p>
+          <p class="total">¥ 6,000</p>
+        </div>
+        <form action="" method="post">
+          <div class="buttons">
+            <input type="submit" value="この内容で申請へ進む" id="submit" />
+            <input
+              type="button"
+              value="戻る"
+              id="back"
+              onClick="history.back()"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  </body>
+</html>

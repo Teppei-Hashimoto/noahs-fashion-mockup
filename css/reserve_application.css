@@ -1,0 +1,139 @@
+@charset "UTF-8";
+main {
+  padding-top: 0px;
+  margin-bottom: 80px;
+}
+
+main .wrap {
+  padding: 0 20px 40px;
+  max-width: 769px;
+  margin: auto;
+}
+
+.item-fshnst,
+.item,
+.item-total {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #6f6f6f;
+}
+.item-fshnst {
+  width: 100%;
+}
+.item,
+.item-total {
+  width: 38.2%;
+}
+
+.card-fshnst {
+  display: flex;
+  max-width: 500px;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.fshnst-img {
+  object-fit: cover;
+  align-self: center;
+  margin: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.card-fshnst-r-elm {
+  padding: 10px;
+  align-self: center;
+}
+.fshnst-name {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.subwrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: bold;
+  width: 61.8%;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.total {
+  font-size: 40px;
+  font-weight: bold;
+  width: 61.8%;
+}
+
+/* submit ボタン */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#submit,
+#back {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#submit {
+  /* background-color: #007aff; */
+  background-color: #f54ea2;
+}
+#back {
+  background-color: #757575;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .item-fshnst {
+    padding-left: 10px 0;
+  }
+  .card-fshnst {
+    max-width: 61.8%; /* 1.618÷2.618×100 % */
+    margin: 40px auto 0;
+  }
+  .fshnst-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .newline {
+    display: none;
+  }
+
+  .item-total {
+    width: 61.8%;
+    align-self: flex-end;
+    text-align: right;
+  }
+  .total {
+    width: 38.2%;
+    text-align: right;
+  }
+
+  /* submit ボタン */
+  #submit {
+    max-width: 640px;
+    height: 54px;
+    font-size: 1.6rem;
+  }
+  #back {
+    max-width: 200px;
+  }
+}
