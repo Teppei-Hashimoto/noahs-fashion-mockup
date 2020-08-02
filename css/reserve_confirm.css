@@ -1,39 +1,37 @@
 @charset "UTF-8";
-/* CSS Document */
+main {
+  padding-top: 0px;
+  margin-bottom: 80px;
+}
 
-main div.wrap {
-  padding: 0 10px 40px;
+main .wrap {
+  padding: 0 20px 40px;
   max-width: 769px;
   margin: auto;
 }
 
-.title {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 15px 0 10px;
-}
-
-.item-fshnst, .item, .item-total {
+.item-fshnst,
+.item,
+.item-total {
   font-size: 1.6rem;
   font-weight: normal;
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 .item-fshnst {
   width: 100%;
 }
-.item, .item-total {
+.item,
+.item-total {
   width: 38.2%;
 }
 
 .card-fshnst {
   display: flex;
   max-width: 500px;
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .fshnst-img {
   object-fit: cover;
@@ -73,16 +71,16 @@ main div.wrap {
   width: 61.8%;
 }
 
-input[type="button"] {
+input[type='button'] {
   display: block;
   color: #ffffff;
-  background-color: #007AFF;
+  background-color: #007aff;
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: 1px;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   max-width: 640px;
   width: 100%;
   padding: 15px 0;
@@ -91,31 +89,26 @@ input[type="button"] {
 }
 
 .precaution::before {
-  content: "※";
+  content: '※';
 }
 .precaution {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: normal;
   text-align: center;
-  color: #FF3B30;
+  color: #ff3b30;
   width: 100%;
   max-width: 640px;
   margin: 5px auto 0;
 }
 
 @media screen and (min-width: 769px) {
-  .title {
-    font-size: 2.8rem;
-    padding-bottom: 15px;
-  }
-
   .item-fshnst {
     padding-left: 10px 0;
   }
   .card-fshnst {
     max-width: 61.8%; /* 1.618÷2.618×100 % */
-    margin: 10px auto 0;
+    margin: 40px auto 0;
   }
   .fshnst-img {
     width: 100px;
@@ -136,7 +129,11 @@ input[type="button"] {
     text-align: right;
   }
 
-  input[type="button"]:hover {
-    background-color: #0565CE;
+  input[type='button']:hover {
+    background-color: #0565ce;
+  }
+
+  .precaution {
+    font-size: 1.4rem;
   }
 }
