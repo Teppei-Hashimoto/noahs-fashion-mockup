@@ -31,7 +31,7 @@ Mockup - Noah's Fashion
 - [報酬](https://teppei-hashimoto.github.io/noahs-fashion-mockup/remuneration_list.html)
   - [報酬詳細](https://teppei-hashimoto.github.io/noahs-fashion-mockup/remuneration_detail.html)
 - メッセージ
-- スケジュール
+- [スケジュール](https://teppei-hashimoto.github.io/noahs-fashion-mockup/schedule.html)
 - [マイページ（ファッショニスタ）](https://teppei-hashimoto.github.io/noahs-fashion-mockup/mypage_fashionista.html)
   - [本人情報登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_edit/card_register_account.html)
     - [本人情報確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_edit/card_register_account_confirm.html)
