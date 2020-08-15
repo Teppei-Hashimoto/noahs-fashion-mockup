@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  width: calc(100vw - 40px);
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px 20px 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 閉じるボタンのスタイル */
+.modal-content #closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  color: #555555;
+}
+.modal-content #closeBtn .icon-clear {
+  font-size: 3.2rem;
+}
+
+/* 日付のスタイル */
+.s-date {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* 項目のスタイル */
+.modal-item {
+  font-size: 1.6rem;
+  color: #232231;
+  line-height: 1;
+  margin-top: 20px;
+}
+.modal-caution {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+/* 入力のスタイル */
+input[type='text'].modal-input,
+input[type='time'].modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  margin-top: 5px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+/* submitボタン */
+#schedule-submit {
+  width: 100%;
+  height: 40px;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f54ea2;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-content {
+    margin-top: 60px;
+  }
+}

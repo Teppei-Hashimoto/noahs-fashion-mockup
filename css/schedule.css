@@ -1,0 +1,192 @@
+@charset "UTF-8";
+main {
+  padding-bottom: 80px;
+}
+.wrap {
+  padding: 0px 10px;
+}
+/* カレンダーのスタイル */
+#calendar {
+  width: 100%;
+}
+
+/* 予定予約リストのスタイル */
+#booking-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.booking-paper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 10px;
+  margin-top: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* 予定削除ボタン */
+.booking-paper .booking-delete {
+  position: absolute;
+  border: none;
+  background-color: inherit;
+  top: 6px;
+  right: 6px;
+  outline: none;
+}
+.booking-paper .booking-delete .icon-clear {
+  font-size: 2.4rem;
+  color: #555555;
+}
+
+/* スケジュール情報のスタイル */
+.b-date {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.booking-paper .sub-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px 0px;
+}
+.booking-paper .sub-item p {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #555555;
+  word-break: break-all;
+}
+.b-unit,
+.b-place {
+  margin-left: 12px;
+}
+.booking-border {
+  display: block;
+  height: 0;
+  border: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+/* リクエストユーザーのスタイル */
+.request-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.request-header {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #232231;
+}
+.user-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 10px;
+}
+.user-card .user-image {
+  display: block;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+.user-info .user-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #232231;
+}
+.user-info .look-request {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  padding: 2px 5px;
+  color: #007aff;
+  cursor: pointer;
+}
+.user-card .blank-space {
+  flex-grow: 1;
+}
+
+/* 選択ボタンのスタイル */
+.user-card .select-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f54ea2;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* 選択不可スタイル */
+.disabled-card {
+  background-color: #e7e7e7;
+}
+.user-card .disabled-button {
+  background-color: #bdbdbd;
+  color: #8b8b8b;
+  cursor: default;
+}
+
+@media screen and (min-width: 769px) {
+  .wrap {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* カレンダーのスタイル */
+  #calender-blank {
+    width: 50%;
+  }
+  #calendar {
+    width: 48vw;
+    position: fixed;
+  }
+  #calendar table {
+    height: 25vw;
+  }
+
+  /* 予定予約リストのスタイル */
+  #booking-list {
+    width: 50%;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #calendar {
+    width: 500px;
+  }
+}

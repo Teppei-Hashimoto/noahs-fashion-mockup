@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+#calendar th,
+#calendar td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+#calendar th:first-child,
+#calendar td:first-child {
+  color: red;
+}
+
+#calendar th:last-child,
+#calendar td:last-child {
+  color: royalblue;
+}
+
+#calendar td.is-disabled {
+  color: #ccc;
+}
+
+/* 年月表示のスタイル */
+.table-caption h2 {
+  line-height: 1;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+/* 前月次月変更ボタン */
+#prev,
+#next {
+  width: 33px;
+  height: 33px;
+  border: none;
+  background-color: inherit;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+#prev {
+  margin-right: 30px;
+}
+#next {
+  margin-left: 30px;
+}
+
+#calendar table {
+  margin-top: 10px;
+}
+
+#year_1 {
+  width: 80px;
+}
+#month_1,
+#day_1 {
+  width: 30px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>スケジュール</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/calender.css" />
+    <link rel="stylesheet" href="./css/schedule.css" />
+    <link rel="stylesheet" href="./css/schedule_modal.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">スケジュール</h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="探す" title="探す" class="active-menu"
+                ><span aria-hidden="true" class="icon-search"></span><span class="menu-search">探す</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="お気に入り" title="お気に入り"
+                ><span aria-hidden="true" class="icon-heart-o"></span><span class="menu-favorite">お気に入り</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="メッセージ" title="メッセージ"
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
+                ><span class="menu-message">メッセージ</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="予約確認" title="予約確認"
+                ><span aria-hidden="true" class="icon-event_note"></span><span class="menu-schedule">予約確認</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="マイページ" title="マイページ"
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
+                ><span class="menu-mypage">マイページ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <div id="calendar"></div>
+        <!-- edit_schedule.jsでカレンダー表示-->
+        <div id="calender-blank"></div>
+
+        <div id="booking-list">
+          <!-- ステータス：リクエスト待ち -->
+          <div class="booking-paper">
+            <button type="button" onclick="" class="booking-delete"><span class="icon-clear"></span></button>
+            <p class="b-date">8月10日(月)</p>
+            <div class="sub-item">
+              <p class="b-time">10:00~12:00</p>
+              <p class="b-place">ひばりヶ丘駅周辺</p>
+              <p class="b-unit">&yen;8000+税</p>
+            </div>
+            <hr class="booking-border" />
+            <div class="request-list"></div>
+          </div>
+          <!-- ステータス：リクエスト待ち　ここまで -->
+          <!-- ステータス：ユーザー選択 -->
+          <div class="booking-paper">
+            <button type="button" onclick="" class="booking-delete"><span class="icon-clear"></span></button>
+            <p class="b-date">8月10日(月)</p>
+            <div class="sub-item">
+              <p class="b-time">10:00~12:00</p>
+              <p class="b-place">ひばりヶ丘駅周辺</p>
+              <p class="b-unit">&yen;8000+税</p>
+            </div>
+            <hr class="booking-border" />
+            <div class="request-list">
+              <p class="request-header">ユーザーを選択してください</p>
+              <form method="POST" class="user-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <button type="button" class="select-button">選択</button>
+              </form>
+              <form method="POST" class="user-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <button type="button" class="select-button">選択</button>
+              </form>
+              <form method="POST" class="user-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <button type="button" class="select-button">選択</button>
+              </form>
+            </div>
+          </div>
+          <!-- ステータス：ユーザー選択　ここまで -->
+          <!-- ステータス：入金待ち -->
+          <div class="booking-paper">
+            <!-- <button type="button" onclick="" class="booking-delete"><span class="icon-clear"></span></button> -->
+            <p class="b-date">8月10日(月)</p>
+            <div class="sub-item">
+              <p class="b-time">10:00~12:00</p>
+              <p class="b-place">ひばりヶ丘駅周辺</p>
+              <p class="b-unit">&yen;8000+税</p>
+            </div>
+            <hr class="booking-border" />
+            <div class="request-list">
+              <p class="request-header">ステータス記述</p>
+              <form method="POST" class="user-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <!-- <button type="button" class="select-button">選択</button> -->
+              </form>
+              <p class="request-header">ステータス記述</p>
+              <form method="POST" class="user-card disabled-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <button type="button" class="select-button disabled-button" disabled>選択</button>
+              </form>
+              <form method="POST" class="user-card disabled-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <button type="button" class="select-button disabled-button" disabled>選択</button>
+              </form>
+            </div>
+          </div>
+          <!-- ステータス：入金待ち　ここまで -->
+          <!-- ステータス：予約確定 -->
+          <div class="booking-paper">
+            <!-- <button type="button" onclick="" class="booking-delete"><span class="icon-clear"></span></button> -->
+            <p class="b-date">8月10日(月)</p>
+            <div class="sub-item">
+              <p class="b-time">10:00~12:00</p>
+              <p class="b-place">ひばりヶ丘駅周辺</p>
+              <p class="b-unit">&yen;8000+税</p>
+            </div>
+            <hr class="booking-border" />
+            <div class="request-list">
+              <p class="request-header">ステータス記述</p>
+              <form method="POST" class="user-card">
+                <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="user-image" />
+                <div class="user-info">
+                  <p class="user-name">たなかたろうです</p>
+                  <button type="button" class="look-request">要望を見る</button>
+                </div>
+                <div class="blank-space"></div>
+                <!-- <button type="button" class="select-button">選択</button> -->
+              </form>
+            </div>
+          </div>
+          <!-- ステータス：予約確定　ここまで -->
+        </div>
+      </div>
+      <!-- /.wrap -->
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <form class="schedule-form" method="post">
+            <!-- 閉じるボタン -->
+            <button type="button" id="closeBtn" value="close"><span class="icon-clear"></span></button>
+            <!-- 閉じるボタン　ここまで -->
+            <!-- 日付 -->
+            <!-- <p class="s-date"><span id="year_1"></span>年<span id="month_1"></span>月<span id="day_1"></span>日</p> -->
+            <p class="s-date"><span id="month_1">8</span>月<span id="day_1">15</span>日</p>
+            <input type="hidden" name="year" min="2020" required id="year" />
+            <input type="hidden" name="month" min="1" max="12" required id="month" />
+            <input type="hidden" name="day" min="1" max="31" required id="day" />
+            <!-- 日付　ここまで -->
+            <!-- 実施場所 -->
+            <label for="place" class="modal-item">実施場所</label>
+            <input type="text" name="place" id="place" class="modal-input" value="" required />
+            <!-- 実施場所　ここまで -->
+            <!-- 開始時間 -->
+            <label for="start_time" class="modal-item">開始時間</label>
+            <label for="start_time" class="modal-caution">※ 10時~21時の間で30分単位に設定してください</label>
+            <input type="time" name="start_time" id="start_time" class="modal-input" required step="1800" min="10:00" max="20:00" />
+            <!-- 開始時間　ここまで -->
+            <!-- 終了時間 -->
+            <label for="end_time" class="modal-item">終了時間</label>
+            <input type="time" name="end_time" id="end_time" class="modal-input" required step="1800" min="11:00" max="21:00" />
+            <!-- 終了時間　ここまで -->
+            <input type="hidden" name="public" value="1" />
+            <input type="submit" name="submit-schedule" value="日程を追加する" id="schedule-submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/edit_schedule.js"></script>
+    <script type="text/javascript">
+      //ダイアログ
+      function check() {
+        var result = confirm('本当に削除しますか？');
+
+        if (result) {
+          //はいを選んだときの処理
+        } else {
+          return false;
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      //ダイアログ
+      function take_confirm() {
+        var result = confirm('本当に引き受けますか？');
+
+        if (result) {
+          //はいを選んだときの処理
+        } else {
+          return false;
+        }
+      }
+    </script>
+    <script defer src="./js/notification.js"></script>
+  </body>
+</html>
