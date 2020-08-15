@@ -28,17 +28,25 @@
 }
 
 /* 年月表示のスタイル */
-.table-caption h2 {
-  line-height: 1;
-  text-align: center;
+.table-caption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.table-caption .caption-date {
   font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
 }
 
 /* 前月次月変更ボタン */
 #prev,
 #next {
-  width: 33px;
-  height: 33px;
+  width: 28px;
+  height: 28px;
   border: none;
   background-color: inherit;
   font-size: 2.8rem;

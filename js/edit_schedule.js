@@ -14,11 +14,11 @@ function createCalendar(year, month) {
   let calendarHtml = '';
 
   calendarHtml +=
-    '<div class="table-caption"><h2><button id="prev" class="month" type="button"><span class="icon-keyboard_arrow_left"></span></button>' +
+    '<div class="table-caption"><button id="prev" type="button"><span class="icon-keyboard_arrow_left"></span></button><div class="caption-date">' +
     year +
     '/' +
     month +
-    '<button id="next" type="button" class="month"><span class="icon-keyboard_arrow_right"></span></button></h2></div>';
+    '</div><button id="next" type="button"><span class="icon-keyboard_arrow_right"></span></button></div>';
 
   calendarHtml += '<table>';
 
