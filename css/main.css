@@ -13,15 +13,14 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
-  font-family: Lato, 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体',
-    'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN',
-    'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
-    'MS PGothic', sans-serif;
+  font-family: Lato, 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 main {
   flex: 1;
   padding-top: 10px;
+  padding-bottom: 80px;
 }
 
 ul,
@@ -96,6 +95,35 @@ input[type='button']:focus {
   outline-offset: -2px;
 }
 
+main input.default-input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  max-width: 290px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+main input.default-submit {
+  display: block;
+  height: 40px;
+  width: 100%;
+  max-width: 290px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  text-align: center;
+
+  color: #fff;
+  background-color: #f54ea2;
+  text-align: center;
+  -webkit-appearance: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
 /*====================================================*/
 @media screen and (min-width: 769px) {
   h1 {
