@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>予約確認</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/reserve.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">予約確認</h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="探す" title="探す" class="active-menu"
+                ><span aria-hidden="true" class="icon-search"></span><span class="menu-search">探す</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="お気に入り" title="お気に入り"
+                ><span aria-hidden="true" class="icon-heart-o"></span><span class="menu-favorite">お気に入り</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="メッセージ" title="メッセージ"
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
+                ><span class="menu-message">メッセージ</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="予約確認" title="予約確認"
+                ><span aria-hidden="true" class="icon-event_note">
+                  <!-- 通知アイコン -->
+                  <span id="badge-schedule"></span></span
+                ><span class="menu-schedule">予約確認</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="マイページ" title="マイページ"
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
+                ><span class="menu-mypage">マイページ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <!-- レビュー通知エリア -->
+        <div id="review-area">
+          <!-- 通知テンプレート -->
+          <form action="" method="post">
+            <label class="review-card">
+              <p class="notification-text">Emperorさん のレビューを投稿しよう</p>
+              <span class="icon-keyboard_arrow_right"></span>
+              <input type="submit" class="hidden-submit" />
+            </label>
+          </form>
+          <!-- 通知テンプレート　ここまで -->
+          <form action="" method="post">
+            <label class="review-card">
+              <p class="notification-text">Emperorさん のレビューを投稿しよう</p>
+              <span class="icon-keyboard_arrow_right"></span>
+              <input type="submit" class="hidden-submit" />
+            </label>
+          </form>
+          <form action="" method="post">
+            <label class="review-card">
+              <p class="notification-text">Emperorさん のレビューを投稿しよう</p>
+              <span class="icon-keyboard_arrow_right"></span>
+              <input type="submit" class="hidden-submit" />
+            </label>
+          </form>
+        </div>
+        <!-- レビュー通知エリア　ここまで -->
+        <!-- タブ切り替え -->
+        <ul class="tab-reserve">
+          <li class="active-tab">リクエスト申請</li>
+          <li>入金手続き</li>
+          <li>予約確定</li>
+        </ul>
+        <!-- タブ切り替え　ここまで -->
+        <!-- リスト表示 -->
+        <div class="reserve-history">
+          <!-- リクエスト申請 -->
+          <ul class="show-list">
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+          </ul>
+          <!-- リクエスト申請　ここまで -->
+
+          <!-- 入金手続き -->
+          <ul>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+          </ul>
+          <!-- 入金手続き　ここまで -->
+
+          <!-- 予約確定 -->
+          <!-- <ul>
+            <li class="reserve-item">
+              <form action="" method="post">
+                <label>
+                  <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" />
+                  <div class="reserve-info">
+                    <p class="name">Emperorさん</p>
+                    <div class="date">
+                      <p class="day">2020/7/20 (木)</p>
+                      <p class="time">10:00~12:00</p>
+                    </div>
+                  </div>
+                  <div class="blank-space"></div>
+                  <p class="amount">¥114,000</p>
+                  <p class="req-date">申請日：7/10</p>
+                  <input type="submit" class="hidden-submit" />
+                </label>
+              </form>
+            </li>
+          </ul> -->
+          <!-- 予約確定　ここまで -->
+        </div>
+        <!-- リスト表示　ここまで -->
+      </div>
+    </main>
+    <!-- メインここまで -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      // ＊予約ページのスクリプト＊
+      $('.tab-reserve li').click(function () {
+        let index = $('.tab-reserve li').index(this);
+        $('.tab-reserve li').removeClass('active-tab');
+        $(this).addClass('active-tab');
+        $('.reserve-history ul').removeClass('show-list').eq(index).addClass('show-list');
+      });
+    </script>
+    <script defer src="./js/notification.js"></script>
+  </body>
+</html>

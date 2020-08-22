@@ -1,0 +1,157 @@
+@charset "UTF-8";
+main {
+  padding-top: 0px;
+}
+main .wrap {
+  width: 100%;
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+.hidden-submit {
+  display: none;
+}
+
+/* レビュー投稿通知のスタイル */
+#review-area {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+#review-area form {
+  padding: 10px;
+}
+#review-area form:not(:first-of-type) {
+  padding-top: 0px;
+}
+.review-card {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.notification-text {
+  font-size: 1.4rem;
+  color: #232231;
+}
+.review-card .icon-keyboard_arrow_right {
+  font-size: 2rem;
+}
+
+/* タブのスタイル */
+.tab-reserve {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+}
+.tab-reserve li {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  color: #555555;
+  display: block;
+  flex-grow: 1;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.tab-reserve li.active-tab {
+  color: #f54ea2;
+  border-bottom: 3px solid #f54ea2;
+}
+
+/* 予約アイテムのスタイル */
+.reserve-history p {
+  line-height: 1;
+  color: #232231;
+}
+
+.reserve-item label {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+}
+.reserve-item .req-date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+.reserve-item img {
+  display: block;
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.reserve-item .name {
+  font-size: 1.8rem;
+}
+.reserve-item .day,
+.reserve-item .time {
+  font-size: 1.4rem;
+}
+.reserve-item .amount {
+  font-size: 2rem;
+}
+.reserve-item .blank-space {
+  flex-grow: 1;
+}
+.reserve-info {
+  padding-left: 10px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.reserve-info .date {
+  padding-left: 5px;
+}
+
+.reserve-history ul {
+  display: none;
+}
+.reserve-history ul.show-list {
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    background-color: #f5f5f5;
+  }
+
+  .tab-reserve,
+  .reserve-history {
+    background-color: #ffffff;
+  }
+  .tab-reserve {
+    border-top: none;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  }
+  .reserve-history {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  }
+  .reserve-history ul li:last-of-type label {
+    border-bottom: none;
+  }
+}
