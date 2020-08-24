@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ファッショニスタを探す</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/fashionista_list.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">ファッショニスタを探す</h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="探す" title="探す" class="active-menu"
+                ><span aria-hidden="true" class="icon-search"></span><span class="menu-search">探す</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="お気に入り" title="お気に入り"
+                ><span aria-hidden="true" class="icon-heart-o"></span><span class="menu-favorite">お気に入り</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="メッセージ" title="メッセージ"
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
+                ><span class="menu-message">メッセージ</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="予約確認" title="予約確認"
+                ><span aria-hidden="true" class="icon-event_note">
+                  <!-- 通知アイコン -->
+                  <span id="badge-schedule"></span></span
+                ><span class="menu-schedule">予約確認</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="マイページ" title="マイページ"
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
+                ><span class="menu-mypage">マイページ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <!-- テンプレート -->
+        <form action="" method="POST" class="card-fashionista">
+          <label>
+            <div class="card-media">
+              <img src="./fashionista_edit/fashionist_images/man-sample_1.jpg" alt="ファッショニスタ" class="fashionista-img" />
+            </div>
+            <div class="card-content">
+              <p class="fashionista-name">あいうえおかきく</p>
+              <div class="fashionista-price">
+                <span class="price-value">&yen;11000</span>
+                <span class="content-item">/ 時間</span>
+              </div>
+              <div class="fashionista-gender">
+                <span class="gender-male">男性</span>
+                <span class="gender-female">女性</span>
+                <span class="gender-others">中性</span>
+                <span class="content-item">/ 対象</span>
+              </div>
+              <div class="fashionista-field">
+                <span class="field-coordinate">コーディネート</span>
+                <span class="field-makeup">メイクアップ</span>
+              </div>
+            </div>
+            <input type="submit" value="" class="hidden-submit" name="card-submit" />
+          </label>
+          <!-- お気に入りボタン -->
+          <button type="button" class="fav-button">
+            <span class="icon-heart-o"></span>
+          </button>
+          <!-- hidden パラメータはここに記述 -->
+          <input type="hidden" name="" />
+        </form>
+        <!-- テンプレート　ここまで -->
+        <!-- サンプル -->
+        <form action="" method="POST" class="card-fashionista">
+          <label>
+            <div class="card-media">
+              <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" alt="ファッショニスタ" class="fashionista-img" />
+            </div>
+            <div class="card-content">
+              <p class="fashionista-name">あいうえおかきく</p>
+              <div class="fashionista-price">
+                <span class="price-value">&yen;11000</span>
+                <span class="content-item">/ 時間</span>
+              </div>
+              <div class="fashionista-gender">
+                <!-- <span class="gender-male">男性</span> -->
+                <span class="gender-female">女性</span>
+                <span class="gender-others">中性</span>
+                <span class="content-item">/ 対象</span>
+              </div>
+              <div class="fashionista-field">
+                <span class="field-coordinate">コーディネート</span>
+                <span class="field-makeup">メイクアップ</span>
+              </div>
+            </div>
+            <input type="submit" value="" class="hidden-submit" name="card-submit" />
+          </label>
+          <button type="button" class="fav-button">
+            <span class="icon-heart-o"></span>
+          </button>
+          <input type="hidden" name="" />
+        </form>
+        <form action="" method="POST" class="card-fashionista">
+          <label>
+            <div class="card-media">
+              <img src="./images/blank_white.jpg" alt="ファッショニスタ" class="fashionista-img" />
+            </div>
+            <div class="card-content">
+              <p class="fashionista-name">あいうえおかきく</p>
+              <div class="fashionista-price">
+                <span class="price-value">&yen;11000</span>
+                <span class="content-item">/ 時間</span>
+              </div>
+              <div class="fashionista-gender">
+                <span class="gender-male">男性</span>
+                <!-- <span class="gender-female">女性</span> -->
+                <!-- <span class="gender-others">中性</span> -->
+                <span class="content-item">/ 対象</span>
+              </div>
+              <div class="fashionista-field">
+                <span class="field-coordinate">コーディネート</span>
+                <span class="field-makeup">メイクアップ</span>
+              </div>
+            </div>
+            <input type="submit" value="" class="hidden-submit" name="card-submit" />
+          </label>
+          <button type="button" class="fav-button">
+            <span class="icon-heart-o"></span>
+          </button>
+          <input type="hidden" name="" />
+        </form>
+        <form action="" method="POST" class="card-fashionista">
+          <label>
+            <div class="card-media">
+              <img src="./images/blank_off-white.jpg" alt="ファッショニスタ" class="fashionista-img" />
+            </div>
+            <div class="card-content">
+              <p class="fashionista-name">あいうえおかきく</p>
+              <div class="fashionista-price">
+                <span class="price-value">&yen;11000</span>
+                <span class="content-item">/ 時間</span>
+              </div>
+              <div class="fashionista-gender">
+                <span class="gender-male">男性</span>
+                <span class="gender-female">女性</span>
+                <span class="gender-others">中性</span>
+                <span class="content-item">/ 対象</span>
+              </div>
+              <div class="fashionista-field">
+                <span class="field-coordinate">コーディネート</span>
+                <span class="field-makeup">メイクアップ</span>
+              </div>
+            </div>
+            <input type="submit" value="" class="hidden-submit" name="card-submit" />
+          </label>
+          <button type="button" class="fav-button">
+            <span class="icon-heart-o"></span>
+          </button>
+          <input type="hidden" name="" />
+        </form>
+        <form action="" method="POST" class="card-fashionista">
+          <label>
+            <div class="card-media">
+              <img src="./fashionista_edit/fashionist_images/man-sample_1.jpg" alt="ファッショニスタ" class="fashionista-img" />
+            </div>
+            <div class="card-content">
+              <p class="fashionista-name">あいうえおかきく</p>
+              <div class="fashionista-price">
+                <span class="price-value">&yen;11000</span>
+                <span class="content-item">/ 時間</span>
+              </div>
+              <div class="fashionista-gender">
+                <span class="gender-male">男性</span>
+                <span class="gender-female">女性</span>
+                <span class="gender-others">中性</span>
+                <span class="content-item">/ 対象</span>
+              </div>
+              <div class="fashionista-field">
+                <span class="field-coordinate">コーディネート</span>
+                <span class="field-makeup">メイクアップ</span>
+              </div>
+            </div>
+            <input type="submit" value="" class="hidden-submit" name="card-submit" />
+          </label>
+          <!-- お気に入り登録後 -->
+          <button type="button" class="fav-button fav-checked">
+            <!-- <span class="icon-heart-o"></span> -->
+            <span class="icon-heart"></span>
+          </button>
+          <!-- お気に入り登録後　ここまで -->
+          <input type="hidden" name="" />
+        </form>
+        <!-- サンプル　ここまで -->
+      </div>
+    </main>
+    <!-- メインここまで -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
