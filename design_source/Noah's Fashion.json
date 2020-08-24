@@ -3491,7 +3491,11 @@
         {
           "order": 0,
           "ligatures": "person",
-          "id": 685
+          "id": 685,
+          "prevSize": 24,
+          "code": 59662,
+          "name": "person",
+          "tempChar": ""
         },
         {
           "order": 0,
@@ -25639,7 +25643,10 @@
         {
           "name": "heart",
           "id": 8,
-          "order": 0
+          "order": 30,
+          "prevSize": 28,
+          "code": 61444,
+          "tempChar": ""
         },
         {
           "name": "star",
@@ -26257,7 +26264,7 @@
           "order": 3,
           "prevSize": 28,
           "code": 61578,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "sign-out",
@@ -28508,7 +28515,7 @@
           "order": 4,
           "prevSize": 28,
           "code": 62075,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "houzz",
@@ -39612,7 +39619,7 @@
           "id": 63,
           "prevSize": 32,
           "code": 59710,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "credit-card, money5",
@@ -40839,7 +40846,7 @@
           "id": 267,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "minus, subtract",
