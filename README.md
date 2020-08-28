@@ -2,7 +2,7 @@
 Mockup - Noah's Fashion
 ***
 ## ユーザー
-- ファッショニスタ一覧（探す）
+- [ファッショニスタ一覧（探す）](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_list.html)
   - ファッショニスタ詳細
     - [予約リクエストを送る（内容確認）](https://teppei-hashimoto.github.io/noahs-fashion-mockup/reserve_application.html)
       - [予約リクエストを送る(スタイリング要望)](https://teppei-hashimoto.github.io/noahs-fashion-mockup/reserve_styling_request.html)
