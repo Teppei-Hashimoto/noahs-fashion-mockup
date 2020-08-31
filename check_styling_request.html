@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>要望を見る</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon_fonts.css" />
+    <link rel="stylesheet" href="./css/tabbar.css" />
+    <link rel="stylesheet" href="./css/check_styling_request.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="wrap-header">
+        <h1 id="logo">要望を見る</h1>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="探す" title="探す" class="active-menu"
+                ><span aria-hidden="true" class="icon-search"></span><span class="menu-search">探す</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="お気に入り" title="お気に入り"
+                ><span aria-hidden="true" class="icon-heart-o"></span><span class="menu-favorite">お気に入り</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="メッセージ" title="メッセージ"
+                ><span aria-hidden="true" class="icon-commenting-o">
+                  <!-- 通知アイコン -->
+                  <span id="badge-messages">99</span> </span
+                ><span class="menu-message">メッセージ</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="予約確認" title="予約確認"
+                ><span aria-hidden="true" class="icon-event_note">
+                  <!-- 通知アイコン -->
+                  <span id="badge-schedule"></span></span
+                ><span class="menu-schedule">予約確認</span></a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="マイページ" title="マイページ"
+                ><span aria-hidden="true" class="icon-person_outline">
+                  <!-- 通知アイコン -->
+                  <span id="badge-mypage"></span></span
+                ><span class="menu-mypage">マイページ</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <div class="code-imgs">
+          <!-- 写真1 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_1" class="code-img" />
+
+          <!-- 写真2 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_2" class="code-img" />
+
+          <!-- 写真3 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_3" class="code-img" />
+
+          <!-- 写真4 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_4" class="code-img" />
+
+          <!-- 写真5 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_5" class="code-img" />
+
+          <!-- 写真6 -->
+          <img src="../images/blank_off-white.jpg" alt="" id="code_6" class="code-img" />
+        </div>
+
+        <div id="questionnaire">
+          <div class="wrap-question">
+            <p class="question">
+              1. 普段、ショッピングはどのようなかたちで行いますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button checked">店舗</div>
+              <div class="check-button">通販サイト</div>
+              <div class="check-button">どちらとも</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              2. お出掛けの服装を決めるまでにどのくらい時間をかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button checked">10分以内</div>
+              <div class="check-button">10〜30分</div>
+              <div class="check-button">30分以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              3. 流行のファッションを追いかけていますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button checked">常に</div>
+              <div class="check-button">しばしば</div>
+              <div class="check-button">全く追いかけていない</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              4. どのようなファッションスタイルが好きですか？ 複数選択可能（最大3つ）
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">アウトドア</div>
+              <div class="check-button">青文字</div>
+              <div class="check-button">赤文字</div>
+              <div class="check-button">アメカジ</div>
+              <div class="check-button">裏原</div>
+              <div class="check-button">OL</div>
+              <div class="check-button">大人女子</div>
+              <div class="check-button">オラオラ</div>
+              <div class="check-button">エスニック</div>
+              <div class="check-button">海外</div>
+              <div class="check-button">カジュアル</div>
+              <div class="check-button">ガーリッシュ</div>
+              <div class="check-button">ギャル</div>
+              <div class="check-button">キレイめ</div>
+              <div class="check-button">キレカジ</div>
+              <div class="check-button">コスプレ</div>
+              <div class="check-button">ゴスロリ</div>
+              <div class="check-button">コンサバ</div>
+              <div class="check-button">サロン</div>
+              <div class="check-button">ジェンダーレス</div>
+              <div class="check-button">渋谷系</div>
+              <div class="check-button">女子大生</div>
+              <div class="check-button">シンプル</div>
+              <div class="check-button">ストリート</div>
+              <div class="check-button">スニーカー</div>
+              <div class="check-button">スポーツ</div>
+              <div class="check-button">セクシー</div>
+              <div class="check-button">セレブ</div>
+              <div class="check-button">ハイブランド</div>
+              <div class="check-button">原宿系</div>
+              <div class="check-button">パンク</div>
+              <div class="check-button">ビジネス</div>
+              <div class="check-button">V系</div>
+              <div class="check-button">フェミニン</div>
+              <div class="check-button">プチプラ</div>
+              <div class="check-button">古着</div>
+              <div class="check-button">ボーイッシュ</div>
+              <div class="check-button">ホスト</div>
+              <div class="check-button">ミリタリー</div>
+              <div class="check-button">モノトーン</div>
+              <div class="check-button">モード</div>
+              <div class="check-button">森系</div>
+              <div class="check-button">ラグジュアリー</div>
+              <div class="check-button">ロック</div>
+              <div class="check-button">ロリータ</div>
+              <div class="check-button">和服</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              5. 1ヶ月の洋服代はいくらですか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              6. 今回の御予算を選択してください。
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              7. 普段、トップスにいくらかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              8. 普段、ボトムスにいくらかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              9. 普段、アウターにいくらかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              10. 普段、靴にいくらかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              11. 普段、アクセサリーやバッグにいくらかけますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">5千円未満</div>
+              <div class="check-button">5千円〜1万円</div>
+              <div class="check-button">1万円〜3万円</div>
+              <div class="check-button">3万円〜5万円</div>
+              <div class="check-button">5万円以上</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              12. 好きな色を選んで下さい。 複数選択可能（最大3つ）
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">黒</div>
+              <div class="check-button">白</div>
+              <div class="check-button">青</div>
+              <div class="check-button">赤</div>
+              <div class="check-button">黄</div>
+              <div class="check-button">緑</div>
+              <div class="check-button">紺</div>
+              <div class="check-button">紫</div>
+              <div class="check-button">茶</div>
+              <div class="check-button">ピンク</div>
+              <div class="check-button">カーキ</div>
+              <div class="check-button">グレー</div>
+              <div class="check-button">金</div>
+              <div class="check-button">銀</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              13. 好きなテイストを選んで下さい。 当てはまるものを全て選んで下さい。
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">柄</div>
+              <div class="check-button">シンプル</div>
+              <div class="check-button">どちらとも</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              14. どんなブランドが好きですか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_14" id="question_14" class="answer-textarea" disabled>
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</textarea
+            >
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              15. どんなブランドを提案して欲しいですか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <div class="check-buttons">
+              <div class="check-button">自分が知っているブランド</div>
+              <div class="check-button">自分が知らないブランド</div>
+              <div class="check-button">どちらとも</div>
+            </div>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              16. どんなコーディネートを提案して欲しいですか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_16" id="question_16" class="answer-textarea" disabled></textarea>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              17. 好きな有名人や歌のジャンルなど、あなたの好みが分かるものを教えて下さい。
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_17" id="question_17" class="answer-textarea" disabled></textarea>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              18. なぜこのファッショニスタを選びましたか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_18" id="question_18" class="answer-textarea" disabled></textarea>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              19. ファッショニスタにどこでコーディネートして欲しいですか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_19" id="question_19" class="answer-textarea" disabled></textarea>
+          </div>
+          <div class="wrap-question">
+            <p class="question">
+              20. ファッショニスタに伝えておきたいことはありますか？
+            </p>
+          </div>
+          <div class="wrap-answer">
+            <textarea name="question_20" id="question_20" class="answer-textarea" disabled></textarea>
+          </div>
+        </div>
+
+        <!-- 戻るボタン -->
+        <button type="button" onClick="history.back()" id="back">戻る</button>
+      </div>
+    </main>
+    <!-- メインここまで -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
