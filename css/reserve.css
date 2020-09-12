@@ -56,6 +56,7 @@ main .wrap {
   border-bottom: 2px solid #f5f5f5;
 }
 .tab-reserve li {
+  position: relative;
   font-size: 1.6rem;
   line-height: 1;
   font-weight: bold;
@@ -70,6 +71,18 @@ main .wrap {
 .tab-reserve li.active-tab {
   color: #f54ea2;
   border-bottom: 3px solid #f54ea2;
+}
+
+/* タブの通知スタイル */
+.tab-reserve li #badge-payment {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  background-color: #e7312d;
+  top: 12px;
 }
 
 /* 予約アイテムのスタイル */
@@ -154,6 +167,13 @@ main .wrap {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
     margin-top: 20px;
   }
+
+  /* タブの通知スタイル */
+  .tab-reserve li #badge-payment {
+    width: 9px;
+    height: 9px;
+  }
+
   .reserve-history {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
