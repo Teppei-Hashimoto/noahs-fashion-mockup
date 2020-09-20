@@ -23,7 +23,7 @@ Mockup - Noah's Fashion
   - [顔写真登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/user_registration_selfie.html)
     - [全身写真登録](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/user_registration_coordinate.html)
       - [登録内容確認](https://teppei-hashimoto.github.io/noahs-fashion-mockup/account/user_registration_confirm.html)
-- ユーザーガイド
+- [ユーザーガイド](https://teppei-hashimoto.github.io/noahs-fashion-mockup/user_guide/user_guide.html)
   - [当日サービス体験（サンプル）](https://teppei-hashimoto.github.io/noahs-fashion-mockup/user_guide/user_guide_service.html)
 
 ***
