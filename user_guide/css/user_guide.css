@@ -1,0 +1,108 @@
+@charset "UTF-8";
+main {
+  padding-top: 0px;
+}
+
+/* ヒーローエリア */
+.wrap-hero {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero-img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.container-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 40px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  background-color: rgba(245, 78, 162, 0.8);
+}
+.hero-title {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+}
+
+/* ガイドリスト */
+.container {
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #e8e8e8;
+}
+.guide-title {
+  background-color: inherit;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+
+.guide-item {
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #ffffff;
+}
+.guide-item a {
+  display: block;
+  width: 100%;
+  color: #232231;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 0px;
+}
+.guide-item .icon-keyboard_arrow_right {
+  position: absolute;
+  right: 20px;
+  font-size: 2.6rem;
+  color: #757575;
+}
+
+@media screen and (min-width: 769px) {
+  .wrap {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+
+  /* ヒーローエリア */
+  .hero-img {
+    height: 300px;
+  }
+  .container-hero {
+    width: auto;
+    height: 56px;
+    top: 180px;
+    left: 60px;
+    justify-content: flex-start;
+  }
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  /* ガイドリスト */
+  .container {
+    padding: 0px 20px 20px;
+    margin: 0px 20px;
+    border-radius: 15px;
+  }
+
+  .guide-title {
+    padding: 20px 0px;
+    font-size: 2.4rem;
+  }
+  .guide-item {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
