@@ -1,10 +1,10 @@
 @charset "UTF-8";
 html {
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 body {
   width: 100vw;
-  box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
 }
@@ -14,6 +14,7 @@ main {
   color: #232231;
 }
 
+/* ヒーローヘッダー */
 #hero1 {
   position: relative;
   height: 250px;
@@ -46,18 +47,19 @@ a.hero-user-login {
 
 #logo-top {
   position: absolute;
-  top: 32px;
+  top: -128px;
   left: 40px;
-  font-size: 3.8rem;
+  font-size: 4.8rem;
   color: #ffffff;
   line-height: 1;
   text-shadow: 0px 3px 6px #f54444fb;
 }
 #hero-h1 {
   position: absolute;
-  top: 96px;
+  top: 64px;
   left: 24px;
   font-size: 1.6rem;
+  line-height: 28px;
   color: #ffffff;
   text-shadow: 0px 3px 6px #f54444fb;
 }
@@ -71,8 +73,13 @@ a.hero-user-login {
   text-shadow: 0px 3px 6px #f54444fb;
 }
 
+/* メインエリア */
 main .wrap {
+  width: 100%;
+  max-width: 640px;
+  box-sizing: border-box;
   padding: 0px 16px;
+  margin: 0px auto;
 }
 
 .register-buttons {
@@ -85,8 +92,8 @@ main .wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 144px; */
   width: 100%;
+  max-width: 400px;
   height: 64px;
   background: transparent linear-gradient(61deg, #ffdebe 0%, #ff88c5 100%) 0% 0% no-repeat padding-box;
   border-radius: 10px;
@@ -135,6 +142,7 @@ main .wrap {
 }
 
 .content-proc {
+  box-sizing: border-box;
   width: 50%;
   padding-top: 32px;
   margin-bottom: 32px;
@@ -162,8 +170,9 @@ main .wrap {
   line-height: 28px;
 }
 
-.h3-offer-talent {
+.offer-talent-h3 {
   font-size: 1.6rem;
+  line-height: 28px;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -179,15 +188,14 @@ main .wrap {
   width: 40%;
 }
 
-.container-genre {
-}
-.h3-genre {
+.genre-h3 {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
   line-height: 1;
   margin-bottom: 16px;
 }
-.p-genre {
+.genre-p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -197,6 +205,77 @@ main .wrap {
   margin-bottom: 32px;
   word-break: break-all;
 }
+.genre-p span {
+  padding: 0px 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #hero1 {
+    height: 300px;
+  }
+  a.hero-user-login {
+    font-size: 1.2rem;
+    padding: 7px 9px;
+  }
+  #hero2 {
+    height: 300px;
+  }
+  #logo-top {
+    font-size: 5.6rem;
+    top: -128px;
+  }
+  #hero-h1 {
+    font-size: 2rem;
+    top: 96px;
+  }
+  #hero-h2 {
+    font-size: 1.4rem;
+    top: 192px;
+  }
+
+  main .wrap {
+    padding: 0px 24px;
+  }
+
+  .main-h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 48px;
+  }
+  .main-p {
+    font-size: 1.6rem;
+    margin-bottom: 64px;
+  }
+
+  .container-procs {
+    margin-bottom: 64px;
+  }
+  .proc-h {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  .proc-p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 36px;
+  }
+
+  .offer-talent-h3 {
+    font-size: 2.4rem;
+    line-height: 36px;
+  }
+
+  .genre-p {
+    font-size: 1.5rem;
+    line-height: 23px;
+  }
+  .genre-p span {
+    padding: 0px 4px;
+  }
+}
 
 @media screen and (min-width: 769px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
