@@ -321,6 +321,11 @@ main .wrap {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+  a.hero-user-login {
+    background-color: #ff88c5;
+    opacity: 0.8;
+    right: 24px;
+  }
   .register-buttons {
     padding-top: 32px;
   }
