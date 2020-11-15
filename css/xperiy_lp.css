@@ -15,6 +15,11 @@ main {
 }
 
 /* ヒーローヘッダー */
+#hero-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 #hero1 {
   position: relative;
   height: 250px;
@@ -22,6 +27,7 @@ main {
   background-image: url(../images/fashion-img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 a.hero-user-login {
@@ -43,11 +49,12 @@ a.hero-user-login {
   background-image: url(../images/make-img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 #logo-top {
   position: absolute;
-  top: -128px;
+  top: 128px;
   left: 40px;
   font-size: 4.8rem;
   color: #ffffff;
@@ -56,7 +63,7 @@ a.hero-user-login {
 }
 #hero-h1 {
   position: absolute;
-  top: 64px;
+  top: 320px;
   left: 24px;
   font-size: 1.6rem;
   line-height: 28px;
@@ -65,7 +72,7 @@ a.hero-user-login {
 }
 #hero-h2 {
   position: absolute;
-  top: 160px;
+  top: 400px;
   left: 24px;
   font-size: 1rem;
   line-height: 20px;
@@ -222,15 +229,15 @@ main .wrap {
   }
   #logo-top {
     font-size: 5.6rem;
-    top: -128px;
+    top: 160px;
   }
   #hero-h1 {
     font-size: 2rem;
-    top: 96px;
+    top: 392px;
   }
   #hero-h2 {
     font-size: 1.4rem;
-    top: 192px;
+    top: 472px;
   }
 
   main .wrap {
@@ -275,7 +282,54 @@ main .wrap {
 }
 
 @media screen and (min-width: 769px) {
+  #hero-header {
+    flex-direction: row;
+  }
+  #hero1,
+  #hero2 {
+    width: 50%;
+    height: 400px;
+    opacity: 0.9;
+  }
+  #logo-top {
+    font-size: 8rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #hero-h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 36px;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #hero-h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .register-buttons {
+    padding-top: 32px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  #hero1,
+  #hero2 {
+    width: 50%;
+    height: 480px;
+  }
 }
