@@ -110,6 +110,7 @@ main .wrap {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
 }
 .wrap-items li {
+  position: relative;
   box-sizing: border-box;
   width: 100vw;
   padding: 10px 20px;
@@ -128,6 +129,25 @@ main .wrap {
 
 .hr-items {
   display: none;
+}
+
+/* お知らせ通知 */
+#badge-notification {
+  position: absolute;
+  top: 50%;
+  left: 104px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+  font-size: 1rem;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e7312d;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 769px) {
@@ -220,5 +240,14 @@ main .wrap {
     width: calc(100% - 40px);
     margin: 10px auto;
     border-top: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  /* お知らせ通知 */
+  #badge-notification {
+    width: 25px;
+    height: 25px;
+    font-size: 1.2rem;
+    line-height: 25px;
+    left: 112px;
   }
 }

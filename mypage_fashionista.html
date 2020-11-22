@@ -19,32 +19,27 @@
           <ul>
             <li>
               <a href="#" aria-label="探す" title="探す" class="active-menu"
-                ><span aria-hidden="true" class="icon-search"></span
-                ><span class="menu-search">探す</span></a
+                ><span aria-hidden="true" class="icon-search"></span><span class="menu-search">探す</span></a
               >
             </li>
             <li>
               <a href="#" aria-label="お気に入り" title="お気に入り"
-                ><span aria-hidden="true" class="icon-heart-o"></span
-                ><span class="menu-favorite">お気に入り</span></a
+                ><span aria-hidden="true" class="icon-heart-o"></span><span class="menu-favorite">お気に入り</span></a
               >
             </li>
             <li>
               <a href="#" aria-label="メッセージ" title="メッセージ"
-                ><span aria-hidden="true" class="icon-commenting-o"></span
-                ><span class="menu-message">メッセージ</span></a
+                ><span aria-hidden="true" class="icon-commenting-o"></span><span class="menu-message">メッセージ</span></a
               >
             </li>
             <li>
               <a href="#" aria-label="予約確認" title="予約確認"
-                ><span aria-hidden="true" class="icon-event_note"></span
-                ><span class="menu-schedule">予約確認</span></a
+                ><span aria-hidden="true" class="icon-event_note"></span><span class="menu-schedule">予約確認</span></a
               >
             </li>
             <li>
               <a href="#" aria-label="マイページ" title="マイページ"
-                ><span aria-hidden="true" class="icon-person_outline"></span
-                ><span class="menu-mypage">マイページ</span></a
+                ><span aria-hidden="true" class="icon-person_outline"></span><span class="menu-mypage">マイページ</span></a
               >
             </li>
           </ul>
@@ -56,16 +51,8 @@
     <main>
       <div class="wrap">
         <div class="content-left">
-          <a
-            href="#"
-            aria-label="写真登録"
-            title="写真登録"
-            class="register-img"
-          >
-            <img
-              src="./fashionista_edit/fashionist_images/woman-sample_1.jpg"
-              class="fshnst-img"
-            />
+          <a href="#" aria-label="写真登録" title="写真登録" class="register-img">
+            <img src="./fashionista_edit/fashionist_images/woman-sample_1.jpg" class="fshnst-img" />
             <div class="mark-register"><span class="icon-plus"></span></div>
           </a>
           <p class="fshnst-name">あいうえおかきくけこ</p>
@@ -80,7 +67,10 @@
         </div>
         <div class="content-right">
           <ul class="wrap-items">
-            <li><a href="#">お知らせ</a></li>
+            <li>
+              <a href="#">お知らせ</a>
+              <div id="badge-notification">98</div>
+            </li>
             <hr class="hr-items" />
             <li><a href="#">ログイン情報確認・変更</a></li>
             <hr class="hr-items" />
@@ -157,6 +147,16 @@
           }
         });
       })();
+    </script>
+    <!-- お知らせ通知のスクリプト -->
+    <script defer>
+      const notificationBadge = document.getElementById('badge-notification');
+      if (Number.parseInt(notificationBadge.textContent) === 0) {
+        notificationBadge.parentNode.removeChild(notificationBadge);
+      }
+      if (Number.parseInt(notificationBadge.textContent) > 99) {
+        notificationBadge.textContent = '99+';
+      }
     </script>
   </body>
 </html>
