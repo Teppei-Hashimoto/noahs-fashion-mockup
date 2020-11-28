@@ -191,10 +191,12 @@ main .wrap {
   flex-wrap: nowrap;
   justify-content: space-around;
   margin-bottom: 32px;
+  height: auto;
 }
 .img-offer-talent {
   display: block;
   width: 40%;
+  align-self: flex-start;
 }
 
 .genre-h3 {
