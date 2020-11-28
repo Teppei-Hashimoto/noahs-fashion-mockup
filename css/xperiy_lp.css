@@ -156,12 +156,14 @@ main .wrap {
 }
 .content-proc-img {
   width: 50%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
 }
 
 .content-proc-img .proc-img {
+  align-self: flex-start;
   display: block;
   width: 80%;
 }
