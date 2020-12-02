@@ -3,6 +3,7 @@ Mockup - Noah's Fashion
 ***
 ## ランディングページ
 - [ユーザーLP](https://teppei-hashimoto.github.io/noahs-fashion-mockup/xperiy_lp.html)
+- [ファッショニスタLP](https://teppei-hashimoto.github.io/noahs-fashion-mockup/xperiy_fashionista_lp.html)
 ## ユーザー
 - [ファッショニスタ一覧（探す）](https://teppei-hashimoto.github.io/noahs-fashion-mockup/fashionista_list.html)
   - ファッショニスタ詳細
