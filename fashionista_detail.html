@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBJRWW61HM"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-SBJRWW61HM');
+    </script>
+    <meta charset="utf-8">
+    <title>Shun</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/icon_fonts.css">
+   <link rel="stylesheet" href="./css/star-rating-svg.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/tab.css">
+   <link rel="stylesheet" href="./css/fashionista_detail.css">
+   <link rel="stylesheet" href="./css/calender_fashionista_detail.css">
+   <link rel="stylesheet" href="./css/footer_fashionista_detail.css" />
+  </head>
+<body>
+<header id='header'><div id='wrap-header'><h1 id='logo'><a href='https://xperiy.com/ja/fashionistas.php'>xperiy</a></h1></div></header>
+<main>
+  <div class="wrap">
+    <div class="container">
+      <div class="c_left">
+          <div class="picture" id="picture">
+            <div id="base_image">
+              <!-- カラム落ちを防ぐ為ここのspanタグは一行で記述 -->
+              <!-- <span onclick="imageChanger(-1)" id="base_prev"></span><span onclick="imageChanger(1)" id="base_next"></span> -->
+              <span  id="base_prev"></span><span id="base_next"></span>
+            </div>
+            <div id="lamp_box"></div>
+          </div>
+      </div>
+      <div class="c_right">
+        <div class="info">
+          <div class="box flex_1">
+            <h2 class="uname">Shun</h2>
+            <button type="button" id="favo" value="0" onclick="favorite()">お気に入り</button>
+          </div>
+          <div class="box flex_2">
+            <p>170cm<span class="vertical">|</span></p>
+            <p class="icon"><span class="icon-location_on"></span></p>
+            <p class="place">東京都内</p>
+          </div>
+          <div class="box flex_3">
+          <p>海外</p><p>,キレイめ</p><p>,ラグジュアリー</p></div>
+          <!-- SNS アイコン -->
+          <div class="sns-links">
+            <a class="sns-link-icon" href="" aria-label="twitter" target="_blank"><span class="icon-twitter1"></span></a>
+            <a class="sns-link-icon" href="" aria-label="tiktok" target="_blank"><span class="icon-tiktok"></span></a>
+            <a class="sns-link-icon" href="" aria-label="instagram" target="_blank"><span class="icon-instagram1"></span></a>
+          </div>
+          <!-- SNS アイコン ここまで -->
+        </div>
+        <div class="explain">
+          <h2>今までと違った貴方に！！</h2>
+          <div class="text-box">
+            <p>サービス場所:東京都内を主にしたショッピング同行、カフェでの対談またはzoomオンラインです。<br />
+主な所要時間：2~3軒のショッピング同行では、約1時間です。おすすめは、4~6軒の2時間の枠です。オフライン対面でも、1時間ショップ同行、1時間ネットを使ったカフェでの提案等も可能です。<br />
+オンラインでは、より世界のショップに焦点を当てたアイテムやスタイルを提案させて頂きます。<br />
+サービス内容：私の行きつけのお店を巡り、貴方にあったコーディネートを提案します。東京都内では、渋谷、原宿、表参道、青山、六本木、銀座、上野等で様々なスタイルを提案したいと思っています。地域ごとのお店の特徴等があるので、事前にどんなスタイルを目指しているかをお教え下さい。<br />
+服だけでなく、小物を使ったアイテム等の全体でのバランスも得意です。ネックレスやメガネ等のさり気ないアイテムの提案等もさせて頂きます。<br />
+人と異なるスタイルやワンランク上のファッションを求める方、ちょっとファッションや色々なことを聞いてみたい方など是非よろしくお願いいたします！</p>
+          </div>
+          <form action="user/detail_message.php" method="post">
+            <input type="hidden" name="fashionista_id" value="cd186f1c-32de-4527-a346-ecf2ce9654cb">
+            <input class="send" type="submit" value="メッセージを送る">
+          </form>
+        </div>
+        <div class="profile">
+          <h2>ファッショニスタ紹介</h2>
+          <div class="text-box">
+            <p>経歴：中学生の頃からファッションが好きになり、高校生の頃には読者モデルをやっていました！当時は、黒のタイトめな服を着ていましたが、今は様々な&quot;色&quot;や&quot;形&quot;を使ったファッションスタイルをしています。デザイナーズブランドを主に現在は着ていますが、それだけではなくamazonや世界各地の古着、通販サイトから利用しています。<br />
+好きなブランド:ハイダーアッカーマン、マルニ、マルジェラ<br />
+アピールポイント：様々なファッションスタイルが得意です。カジュアル系やラグジュアリー系や、異性からモテる服装等も任せて下さい。レオナルド・ダ・ヴィンチの言葉に「シンプルさは究極の洗練である」というものがありますが、個人的にはファッションにおいては当てはまらないと思います。どこか他の人と異なるファッションだからカッコイイやオシャレと言われるからです。<br />
+予約リクエストの際に、どんなファッションを目指しているかを書いて頂ければ、オンラインやオフライン問わずどんなスタイルやアイテムを提案できるか準備させて頂きます。<br />
+質問等は、メッセージからお気軽にお問い合わせ下さい！</p>
+          </div>
+        </div>
+
+        <div class="schedule">
+          <div class="schedule__calendar">
+              <!-- <div id="schedule_detail"></div> -->
+            <div class="box">
+              <h2 id="anchor">実施スケジュール</h2>
+              <a href="./guide/home.php" style="text-decoration: underline;color: #007aff" class="guide">予約の流れ</a>
+            </div>
+              <!-- <h2 id="anchor">実施スケジュール<a href="info.php" style="text-decoration: underline;color: #007aff" class="guide">予約の流れ</a></h2> -->
+            <div id="calendar"></div>
+          </div>
+        </div>
+        <!-- <script type="text/javascript">
+          var now = new Date();
+          var year = now.getFullYear();
+          var month = now.getMonth();
+          $(function(){
+            $.ajax({
+              url:'./fashionista_schedule.php',
+              type:'GET',
+              data:{
+                'fashionista_id':'cd186f1c-32de-4527-a346-ecf2ce9654cb',
+                 'y':year,
+                 'm':month + 1,
+              }
+            })
+            // Ajaxリクエストが成功した時発動
+            .done( (data) => {
+              $('#calendar').html(data);
+
+              function update(){
+              // alert(this.dataset.y);
+                $.ajax({
+                  url:'./fashionista_schedule.php',
+                  type:'GET',
+                  data:{
+                    'y':this.dataset.y,
+                    'm':this.dataset.m,
+                    'fashionista_id':'cd186f1c-32de-4527-a346-ecf2ce9654cb',
+                  }
+                })
+                // Ajaxリクエストが成功した時発動
+                .done( (data) => {
+                $('#calendar').html(data);
+                // document.getElementById("next_month").onclick = update;
+                // document.getElementById("before_month").onclick = update;
+                document.getElementById("next").onclick = update;
+                document.getElementById("prev").onclick = update;
+                // console.log(data);
+                })
+                // Ajaxリクエストが失敗した時発動
+                .fail( (data) => {
+                  console.log(data);
+                })
+                // Ajaxリクエストが成功・失敗どちらでも発動
+                .always( (data) => {
+
+                });
+
+              return update();
+              }
+                          // document.getElementById("next_month").onclick = update;
+                          // document.getElementById("before_month").onclick = update;
+              document.getElementById("next").onclick = update;
+              document.getElementById("prev").onclick = update;
+
+            })
+                      // Ajaxリクエストが失敗した時発動
+            .fail( (data) => {
+              console.log(data);
+            })
+            // Ajaxリクエストが成功・失敗どちらでも発動
+            .always( (data) => {
+
+            });
+          });
+        </script> -->
+
+
+        <div id="modal" class="modal">
+             <!-- <div class="modal-content">
+               <div class="modal-header">
+                 <p>2020年5月20日</p>
+                 <button type="button" id="closeBtn">閉じる</button>
+               </div>
+               <div class="modal-body">
+                 <div class="modal-left">
+                   <p class="modal-yen">&yen;6000</p>
+                   <p>10:00〜12:00</p>
+                   <p>渋谷</p>
+                 </div>
+                 <div class="modal-right">
+                   <button type="button" name="button" value="予約する">予約する</button>
+                 </div>
+               </div>
+               <div class="modal-body">
+                 <div class="modal-left">
+                   <p class="modal-yen">&yen;6000</p>
+                   <p>10:00〜12:00</p>
+                   <p>渋谷</p>
+                 </div>
+                 <div class="modal-right">
+                   <button type="button" name="button" value="予約する">予約する</button>
+                 </div>
+               </div>
+             </div>
+           </div> -->
+        </div>
+
+        <div class="review">
+          <div class="box">
+            <h2>レビュー</h2>
+            <a href="#" class="view-all">もっと見る</a>
+          </div>
+          <div class="review-ave">
+            <p><span id="star-ave"></span><span>0</span><span>(0)</span></p>
+          </div>
+          <ul>
+          <li class="list"><div class="flex-box"><p class="uname">さやか</p><p>2021年1月11日</p></div><div id="wrap-rating"><div class="star-rating0"></div><input type="hidden" name="ratingValue" value="" /></div><div class="text-box"><p></p></div></li>
+                       <!-- <li class="list">
+                         <div class="flex-box">
+                           <p class="uname">Youji</p>
+                           <p>2020年1月1日</p>
+                         </div>
+                         <div id="wrap-rating">
+                           <div class="star-rating"></div>
+                           <input type="hidden" name="ratingValue" value="3" />
+                         </div>
+                         <div class="text-box">
+                           <p></p>
+                         </div>
+                       </li> -->
+            </ul>
+          </div>
+          <div class="policy" id="policy">
+            <dl class="policy__caution">
+              <div class="">
+                <h2>禁止事項について</h2>
+              </div>
+              <dt>禁止行為が発覚した場合は強制退会となり、法的措置をとる場合もあります。また今後のご利用も禁止させて頂きます。</dt>
+              <dd>・20歳以上の方のみご利用可能です。</dd>
+              <dd>・必ず購入されたご本人様(1人)のみでの体験をお願いします。2人以上の参加は禁止です。</dd>
+              <dd>・メッセージの内容等のSNS投稿及びサービス中の撮影は、事前にファッショニスタの同意を得てください。</dd>
+              <dd>・ファッショニスタへの暴言やモラルに反する発言、行為、差別は禁止です。</dd>
+              <dd>・ファッショニスタの意思に反するようなプライベートに踏み入る行為、発言は禁止です。</dd>
+              <dd>・スカウト・引き抜き行為などは禁止です。</dd>
+              <dd>・その他のお問い合わせや質問は、<a href="info.php" style="text-decoration: underline;color: #007aff">こちら</a>またはヘルプからお願いします。</dd>
+            </dl>
+          </div>
+
+      <!-- /.right -->
+      </div>
+
+      <div class="bottom">
+        <div class="pc_left">
+          <p class="pc_uname">Shun</p>
+          <p>今までと違った貴方に！！</p>
+        </div>
+        <div class="pc_box">
+          <div class="left">
+            <p><span class="yen">&yen;3,630</span>/時間</p>
+            <p><span class="target">
+            女性男性中性            </span>/対象</p>
+          </div>
+          <div class="right">
+            <a href="#anchor">日程予約</a>
+          </div>
+        </div>
+    </div>
+  </div><!-- /.wrap -->
+</main>
+<footer id="footer"><div id="logo-bottom">xperiy</div><nav class="footer-nav"><ul><li><a href="https://xperiy.com/ja/xperiy.php" class="footer-nav-item">xperiyとは</a></li><li><a href="https://xperiy.com/ja/xperiy_fashionista.php" class="footer-nav-item">ファッショニスタとは</a></li><li><a href="https://xperiy.com/ja/info.php" class="footer-nav-item">お問い合わせ</a></li><li><a href="https://xperiy.com/ja/guide/home.php" class="footer-nav-item">ユーザーガイド</a></li><li><a href="https://xperiy.com/ja/service_term.php" class="footer-nav-item">利用規約</a></li><li><a href="https://xperiy.com/ja/privacy_policy.php" class="footer-nav-item">プライバシーポリシー</a></li><li><a href="https://xperiy.com/ja/specified_commercial.php" class="footer-nav-item">特定商取引法</a></li></ul></nav><div class="copyright">©️ 2021 xperiy</div><div class="copyright">メンテナンス時間:午前2時〜午前3時</div></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+//footerをスクロール後に表示させる
+$(window).scroll(function() {
+  var scroll_len = $(window).scrollTop();
+  // console.log(scroll_len);
+  if ( scroll_len > 300 ) {
+    $('.bottom').animate({height: 'show'}, 'normal' );
+    $('.bottom').css('display','flex');
+  } else {
+    $('.bottom').animate({height: 'hide'}, 'normal' );
+  }
+
+  //webの時左の画像をポリシーに合わせる
+  var width = window.outerWidth;
+  var element = document.getElementById("policy");
+  var elem = element.getBoundingClientRect();
+
+  // var element2 = document.getElementsByClassName('.picture');
+  var element2 = document.getElementById("picture");
+  var elem2 = element2.getBoundingClientRect();
+
+  // var elem2 = $(.picture).getBoundingClientRect();
+
+
+  console.log(elem.top);
+  console.log("img");
+  console.log(elem2.top);
+  if (width > 796) {//pc幅
+    // if (scroll_len > 1500) {
+    if (0 > elem.top) {
+    // if (65> elem.top) {
+      // $('.c_left').css('c_left','relative');
+      // $('.picture').css('position','absolute');
+      // // $('.picture').css('top','1500px');
+      // $('.picture').css('top',elem.top);
+
+
+      $('.picture').css('position','relative');
+      $('.picture').css('top','1500px');
+    }else{
+      $('.picture').css('position','fixed');
+      $('.picture').css('top','');
+    }
+  }
+
+  //webの場合左の画像のfixをとる
+  // if ( scroll_len > 1530 ) {
+  //   $('.picture').css('position','absolute');
+  // }else {
+  //   $('.picture').css('position','fixed');
+  // }
+
+  // if ( scroll_len > 1530 ) {
+  //     $('.c_left').css('position','relative');
+  //     $('.picture').css('position','absolute');
+  //     // $('.picture').css('width','100%');
+  //     $('.picture').animate({
+  //     'bottom': '80px'
+  //     });
+  //   }else {
+  //     $('.c_left').css('position','fixed');
+  //     $('.picture').css('position','absolute');
+  //   };
+});
+
+
+//お気に入り
+function favorite(){
+  var favo = document.getElementById('favo').value;
+  if (favo === "0") {
+    document.getElementById('favo').style.backgroundColor = "#F54EA2";
+    document.getElementById('favo').style.color = "#fff";
+    document.getElementById('favo').value = "1";
+    document.getElementById('favo').textContent = 'お気に入り中';
+  }else if (favo === "1") {
+    document.getElementById('favo').style.backgroundColor = "#fff";
+    document.getElementById('favo').style.color = "#F54EA2";
+    document.getElementById('favo').value = "0";
+    document.getElementById('favo').textContent = 'お気に入り';
+  }
+}
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script>
+$.ajax({
+  url:'./fashionista_images.php',
+  type:'POST',
+  data:{
+    'fashionista_id':'cd186f1c-32de-4527-a346-ecf2ce9654cb',
+  }
+})
+// Ajaxリクエストが成功した時発動
+.done( (data) => {
+  // 画像の配列
+  var imgFile = data;
+  console.log(imgFile);
+  // 画像スライダーの生成
+  var lamp_box = document.getElementById('lamp_box');
+  if (imgFile.length > 1) {
+    for (var i = 0; i < imgFile.length; i++) {
+      var lamp = document.createElement('span');
+      lamp.id = 'lamp' + i;
+      lamp.className = 'lamps';
+      lamp_box.appendChild(lamp);
+    }
+  }
+
+  // 初期化
+  var count = 0;
+  document.getElementById('base_image').style.backgroundImage = 'url(' + imgFile[0] + ')';
+  document.getElementById('lamp0').style.backgroundColor = '#fff';
+  // 画像切替
+  function imageChanger(num) {
+    count += num;
+    if (count >= imgFile.length) {
+      count = imgFile.length - 1;
+    }
+    if (count < 0) {
+      count = 0;
+    }
+    document.getElementById('base_image').style.backgroundImage = 'url(' + imgFile[count] + ')';
+    // 画像スライダーの色切替
+    for (var i = 0; i < imgFile.length; i++) {
+      if (count === i) {
+        document.getElementById('lamp' + i).style.backgroundColor = '#fff';
+      }else {
+        document.getElementById('lamp' + i).style.backgroundColor = 'rgba(242, 242, 242, .65)';
+      }
+    }
+  }
+
+  $(document).on('click', '#base_prev', function(){
+    imageChanger(-1)
+  });
+  $(document).on('click', '#base_next', function(){
+    imageChanger(1)
+  });
+
+})//done終了
+// Ajaxリクエストが失敗した時発動
+.fail( (data) => {
+  // $('.result').html(data);
+  console.log(data);
+})
+// Ajaxリクエストが成功・失敗どちらでも発動
+.always( (data) => {
+
+});
+</script>
+<!-- review_confirm スクリプト -->
+<script src="./js/jquery.star-rating-svg.js"></script>
+<script>
+let ratingValueNum = document.getElementsByName('ratingValue');
+// var i = 0;
+// console.log("reviewRating"+i);
+// for (var i = 0; i < ratingValueNum.length; i++) {
+//   let reviewRating,i = $('.star-rating{$i}');
+//   reviewRating,i.starRating({
+//         useFullStars: true,
+//         readOnly: true,
+//         totalStars: 5,
+//         initialRating: 5,
+//         starSize: 16,
+//         emptyColor: 'lightgray',
+//         hoverColor: 'gold',
+//         activeColor: 'gold',
+//         ratedColor: 'gold',
+//           });
+//   reviewRating,i.starRating('setRating', ratingValueNum[i].value, true);
+// }
+let reviewRating0 = $('.star-rating0');
+reviewRating0.starRating({
+      useFullStars: true,
+      readOnly: true,
+      totalStars: 5,
+      initialRating: 5,
+      starSize: 16,
+      emptyColor: 'lightgray',
+      hoverColor: 'gold',
+      activeColor: 'gold',
+      ratedColor: 'gold',
+        });
+reviewRating0.starRating('setRating', ratingValueNum[0].value, true);
+
+let reviewRating1 = $('.star-rating1');
+reviewRating1.starRating({
+        useFullStars: true,
+        readOnly: true,
+        totalStars: 5,
+        initialRating: 5,
+        starSize: 16,
+        emptyColor: 'lightgray',
+        hoverColor: 'gold',
+        activeColor: 'gold',
+        ratedColor: 'gold',
+          });
+
+reviewRating1.starRating('setRating', ratingValueNum[1].value, true);
+
+let reviewRating2 = $('.star-rating2');
+reviewRating2.starRating({
+        useFullStars: true,
+        readOnly: true,
+        totalStars: 5,
+        initialRating: 5,
+        starSize: 16,
+        emptyColor: 'lightgray',
+        hoverColor: 'gold',
+        activeColor: 'gold',
+        ratedColor: 'gold',
+          });
+
+reviewRating2.starRating('setRating', ratingValueNum[2].value, true);
+
+// 合計の大きな星
+  // star-rating-svg の設定
+  $('#star-ave').starRating({
+      useFullStars: true,
+      readOnly: true,
+      totalStars: 1,
+      initialRating: 1,
+      starSize: 20,
+      emptyColor: 'lightgray',
+      hoverColor: 'gold',
+      activeColor: 'gold',
+      ratedColor: 'gold',
+      });
+      $('#star-ave').starRating('setRating', 1, true);
+</script>
+<script type="text/javascript" src="calendar_detail.js"></script><!-- カレンダーポップアップ -->
+<!-- <script src="./js/Luminous.min.js"></script><! アイコン大きく -->
+<!-- <script src="./js/tab.js"></script> -->
+<!-- <script> //モーダル
+  var btn_test = document.getElementById('btn_test');
+  var btn_back = document.getElementById('btn_back');
+  var modal = document.getElementById('modal');
+  btn_test.addEventListener('click', function() {
+      modal.style.display = 'block';
+  });
+  btn_back.addEventListener('click', function() {
+      modal.style.display = 'none';
+  });
+</script> -->
+<!-- GDPR対応 -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "message": "このウェブサイトでは、Cookieなどのデータを保管することで、サービス機能実現、アナリティクスやターゲティング、パーソナライゼーションなど、サイトの重要な機能を可能にしています。このウェブサイトに留まることで、同意したものとみなされます。",
+    "dismiss": "同意",
+    "href": "https://xperiy.com/ja/privacy_policy.php"
+  }
+});
+</script>
+<!-- GDPR対応ここまで -->
+  </body>
+</html>

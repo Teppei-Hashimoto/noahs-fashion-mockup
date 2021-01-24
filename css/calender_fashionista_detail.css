@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#calendar .table-caption {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+#prev,
+#next {
+  display: block;
+  width: 30px;
+  height: 35px;
+  text-align: center;
+  background-color: inherit;
+}
+#prev,
+#next {
+  display: block;
+  font-size: 28px;
+  color: #000;
+  border: none;
+}
+#calendar .month {
+  font-size: 20px;
+  font-weight: bold;
+}
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+}
+#calendar th,
+#calendar td {
+  width: calc(100% / 7);
+  height: 0;
+  border: 3px solid #fff;
+  padding: 5px;
+  vertical-align: middle;
+}
+#calendar th {
+  font-weight: normal;
+  color: #636161;
+}
+#calendar td {
+  color: #636161;
+}
+#calendar .passed {
+  color: #ccc;
+}
+#calendar .available {
+  border-radius: 10px;
+  background-color: #a9e0f5;
+}
+#calendar .full {
+  /* background-color: #e3a9f5; */
+}
+#calendar td > p {
+  padding: calc(50% - (0.5em + 5px)) 0;
+}

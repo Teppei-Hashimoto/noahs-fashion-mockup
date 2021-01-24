@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?e0643n');
-  src: url('fonts/icomoon.eot?e0643n#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?e0643n') format('truetype'),
-    url('fonts/icomoon.woff?e0643n') format('woff'), url('fonts/icomoon.svg?e0643n#icomoon') format('svg');
+  src: url('fonts/icomoon.eot?9069k');
+  src: url('fonts/icomoon.eot?9069k#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?9069k') format('truetype'),
+    url('fonts/icomoon.woff?9069k') format('woff'), url('fonts/icomoon.svg?9069k#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-facebook:before {
+  content: '\e90e';
+  color: #1877f2;
+}
+.icon-instagram1:before {
+  content: '\e90f';
+  color: #e4405f;
+}
+.icon-tiktok:before {
+  content: '\e910';
+}
+.icon-twitter1:before {
+  content: '\e911';
+  color: #1da1f2;
+}
+.icon-youtube:before {
+  content: '\e912';
+  color: #f00;
+}
 .icon-location_on:before {
   content: '\e905';
 }
